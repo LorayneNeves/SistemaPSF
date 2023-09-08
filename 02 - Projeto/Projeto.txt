@@ -1,0 +1,11 @@
+Algumas documentações
+
+Sistema de login conta Gov:
+https://manual-roteiro-integracao-login-unico.servicos.gov.br/pt/stable/iniciarintegracao.html
+https://www.gov.br/conecta/catalogo/apis/brasil-cidadao-login-unico
+https://github.com/servicosgovbr/manual-roteiro-integracao-login-unico
+
+FrameWork
+O sistema será algo simples, não necessita de interfaces e efeitos muito elaborados. Como o projeto é destinado a trabalho, o meu foco é a experiência dos usuários e não um projeto visualmente interessante/chamativo. Escolhi o Bootstrap porque o foco é na facilidade de uso do usuário e por ser um framework com templates mais simples, ele ajuda também na rapidez da entrega do projeto. 
+Outro ponto é que a comunidade é grande e tem bastante documentação, então será mais útil para mim que não possuo experiência, além disso ele ajudara ja que ele foca no desenvolvimento responsivo, e a intenção é que os usuários consigam acompanhar a aplicação no mobile também.
+https://getbootstrap.com/

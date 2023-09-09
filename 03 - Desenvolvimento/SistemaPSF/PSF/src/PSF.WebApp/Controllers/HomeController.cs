@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Routing;
 using PSF.WebApp.Models;
 using System.Diagnostics;
 
@@ -23,10 +24,16 @@ namespace PSF.WebApp.Controllers
             return View();
         }
 
+        public IActionResult Autencicacao()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
     }
 }

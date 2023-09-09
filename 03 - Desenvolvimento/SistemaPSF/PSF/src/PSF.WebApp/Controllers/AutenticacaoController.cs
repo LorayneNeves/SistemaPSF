@@ -6,7 +6,7 @@ namespace PSF.WebApp.Controllers
     public class AutenticacaoController : Controller
     {
         [HttpGet]
-        public IActionResult Index()
+        public IActionResult Login()
         {
             return View();
         }

@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@govbr-ds/core": "^3.4.0"
+  },
+  "devDependencies": {
+    "purgecss": "^5.0.0"
+  }
+}

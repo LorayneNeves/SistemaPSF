@@ -59,3 +59,34 @@ C:\Users\loray\OneDrive\Área de Trabalho\Sistema_de_Controle-PSF\03 - Desenvolv
 C:\Users\loray\OneDrive\Área de Trabalho\Sistema_de_Controle-PSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\obj\Debug\net6.0\PSF.WebApp.pdb
 C:\Users\loray\OneDrive\Área de Trabalho\Sistema_de_Controle-PSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\obj\Debug\net6.0\PSF.WebApp.genruntimeconfig.cache
 C:\Users\loray\OneDrive\Área de Trabalho\Sistema_de_Controle-PSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\obj\Debug\net6.0\ref\PSF.WebApp.dll
+C:\Users\044860\Desktop\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\044860\Desktop\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\bin\Debug\net6.0\appsettings.json
+C:\Users\044860\Desktop\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\bin\Debug\net6.0\PSF.WebApp.staticwebassets.runtime.json
+C:\Users\044860\Desktop\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\bin\Debug\net6.0\PSF.WebApp.exe
+C:\Users\044860\Desktop\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\bin\Debug\net6.0\PSF.WebApp.deps.json
+C:\Users\044860\Desktop\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\bin\Debug\net6.0\PSF.WebApp.runtimeconfig.json
+C:\Users\044860\Desktop\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\bin\Debug\net6.0\PSF.WebApp.dll
+C:\Users\044860\Desktop\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\bin\Debug\net6.0\PSF.WebApp.pdb
+C:\Users\044860\Desktop\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\obj\Debug\net6.0\PSF.WebApp.csproj.AssemblyReference.cache
+C:\Users\044860\Desktop\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\obj\Debug\net6.0\PSF.WebApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\044860\Desktop\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\obj\Debug\net6.0\PSF.WebApp.AssemblyInfoInputs.cache
+C:\Users\044860\Desktop\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\obj\Debug\net6.0\PSF.WebApp.AssemblyInfo.cs
+C:\Users\044860\Desktop\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\obj\Debug\net6.0\PSF.WebApp.csproj.CoreCompileInputs.cache
+C:\Users\044860\Desktop\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\obj\Debug\net6.0\PSF.WebApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\044860\Desktop\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\obj\Debug\net6.0\PSF.WebApp.RazorAssemblyInfo.cache
+C:\Users\044860\Desktop\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\obj\Debug\net6.0\PSF.WebApp.RazorAssemblyInfo.cs
+C:\Users\044860\Desktop\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\obj\Debug\net6.0\staticwebassets\msbuild.PSF.WebApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\044860\Desktop\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\obj\Debug\net6.0\staticwebassets\msbuild.build.PSF.WebApp.props
+C:\Users\044860\Desktop\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.PSF.WebApp.props
+C:\Users\044860\Desktop\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.PSF.WebApp.props
+C:\Users\044860\Desktop\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\044860\Desktop\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\044860\Desktop\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\044860\Desktop\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\044860\Desktop\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\obj\Debug\net6.0\scopedcss\bundle\PSF.WebApp.styles.css
+C:\Users\044860\Desktop\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\obj\Debug\net6.0\scopedcss\projectbundle\PSF.WebApp.bundle.scp.css
+C:\Users\044860\Desktop\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\obj\Debug\net6.0\PSF.WebApp.dll
+C:\Users\044860\Desktop\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\obj\Debug\net6.0\refint\PSF.WebApp.dll
+C:\Users\044860\Desktop\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\obj\Debug\net6.0\PSF.WebApp.pdb
+C:\Users\044860\Desktop\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\obj\Debug\net6.0\PSF.WebApp.genruntimeconfig.cache
+C:\Users\044860\Desktop\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\obj\Debug\net6.0\ref\PSF.WebApp.dll

@@ -114,7 +114,6 @@ body {
     }
 }
 
-
     .br-sign-in.inverted.active, .br-sign-in.is-inverted.active, .br-sign-in[inverted].active, .br-sign-in.dark-mode.active,
     .br-button.sign-in.inverted.active,
     .br-button.sign-in.is-inverted.active,
@@ -130,7 +129,8 @@ body {
 .br-button.sign-in img {
     max-height: var(--sign-in-img);
 }
-
-
+footer {
+    display: none;
+}
 
 /*# sourceMappingURL=signin.css.map*/

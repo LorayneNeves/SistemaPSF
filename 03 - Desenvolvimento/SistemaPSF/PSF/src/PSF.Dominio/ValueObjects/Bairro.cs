@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace PSF.Dominio.ValueObjects
 {
-    internal class Bairro
+    public class Bairro
     {
+        public string nomeBairro { get; set; }
     }
 }

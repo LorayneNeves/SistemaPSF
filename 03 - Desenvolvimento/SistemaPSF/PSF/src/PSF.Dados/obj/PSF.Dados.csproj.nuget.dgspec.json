@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\044860\\Desktop\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\PSF.Dados.csproj": {}
+    "C:\\Users\\044860\\Desktop\\c\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\PSF.Dados.csproj": {}
   },
   "projects": {
-    "C:\\Users\\044860\\Desktop\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\PSF.Dados.csproj": {
+    "C:\\Users\\044860\\Desktop\\c\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\PSF.Dados.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\044860\\Desktop\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\PSF.Dados.csproj",
+        "projectUniqueName": "C:\\Users\\044860\\Desktop\\c\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\PSF.Dados.csproj",
         "projectName": "PSF.Dados",
-        "projectPath": "C:\\Users\\044860\\Desktop\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\PSF.Dados.csproj",
+        "projectPath": "C:\\Users\\044860\\Desktop\\c\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\PSF.Dados.csproj",
         "packagesPath": "C:\\Users\\044860\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\044860\\Desktop\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\obj\\",
+        "outputPath": "C:\\Users\\044860\\Desktop\\c\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\044860\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\044860\\Desktop\\c\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj": {}
+    "C:\\Users\\044860\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\044860\\Desktop\\c\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj": {
+    "C:\\Users\\044860\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\044860\\Desktop\\c\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\044860\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj",
         "projectName": "PSF.Dominio",
-        "projectPath": "C:\\Users\\044860\\Desktop\\c\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj",
+        "projectPath": "C:\\Users\\044860\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj",
         "packagesPath": "C:\\Users\\044860\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\044860\\Desktop\\c\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\obj\\",
+        "outputPath": "C:\\Users\\044860\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\044860\\AppData\\Roaming\\NuGet\\NuGet.Config",

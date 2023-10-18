@@ -1,17 +1,82 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\044860\\Desktop\\c\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\PSF.Dados.csproj": {}
+    "C:\\Users\\044860\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\PSF.Dados.csproj": {}
   },
   "projects": {
-    "C:\\Users\\044860\\Desktop\\c\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\PSF.Dados.csproj": {
+    "C:\\Users\\044860\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\PSF.Dados.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\044860\\Desktop\\c\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\PSF.Dados.csproj",
+        "projectUniqueName": "C:\\Users\\044860\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\PSF.Dados.csproj",
         "projectName": "PSF.Dados",
-        "projectPath": "C:\\Users\\044860\\Desktop\\c\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\PSF.Dados.csproj",
+        "projectPath": "C:\\Users\\044860\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\PSF.Dados.csproj",
         "packagesPath": "C:\\Users\\044860\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\044860\\Desktop\\c\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\obj\\",
+        "outputPath": "C:\\Users\\044860\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\044860\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\044860\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj": {
+                "projectPath": "C:\\Users\\044860\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\044860\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\044860\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj",
+        "projectName": "PSF.Dominio",
+        "projectPath": "C:\\Users\\044860\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj",
+        "packagesPath": "C:\\Users\\044860\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\044860\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\044860\\AppData\\Roaming\\NuGet\\NuGet.Config",

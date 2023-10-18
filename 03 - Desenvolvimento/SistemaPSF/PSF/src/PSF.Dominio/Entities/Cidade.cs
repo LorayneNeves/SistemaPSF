@@ -8,7 +8,7 @@ namespace PSF.Dominio.Entities
 {
     public class Cidade
     {
-        public string nomeCidade { get; set; }
-        public int cidadeId { get; set; }
+        public string NomeCidade { get; set; }
+        public int CidadeId { get; set; }
     }
 }

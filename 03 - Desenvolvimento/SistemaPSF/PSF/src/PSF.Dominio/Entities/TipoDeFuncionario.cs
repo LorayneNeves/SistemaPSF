@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PSF.Dominio.Entities
 {
-    internal class TipoDeFuncionario
+    public class TipoDeFuncionario
     {
     }
 }

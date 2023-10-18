@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MEXk+f73JABjfs8rn19tQ+0Jk25qfiicYp1tAOeBJRMycXN++M6lCUfE4Gu/Mgq+Gdnt+/osyX1bJSzC6pDQVA==",
+  "dgSpecHash": "yYhGREcLwoR8DYAbzHBPZEr4xZI0OlmwATsg/z151gEM0GSWkw8O0QDzCbiozDioHlYAk4KB+LYd4g/ous702A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\044860\\Desktop\\c\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj",
+  "projectFilePath": "C:\\Users\\044860\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

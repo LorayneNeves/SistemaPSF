@@ -9,10 +9,10 @@ namespace PSF.Dominio.Entities
 {
     public class Endereco
     {
-        public int enderecoId { get; set; }
-        public string rua { get; set; }
+        public int EnderecoId { get; set; }
+        public string Rua { get; set; }
         public Bairro bairro { get; set; }
-        public int numero { get; set; }
+        public int Numero { get; set; }
         public string Cep { get; set; }
         public Cidade cidade { get; set; }
     }

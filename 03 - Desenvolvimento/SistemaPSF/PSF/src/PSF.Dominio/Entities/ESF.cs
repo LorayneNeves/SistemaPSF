@@ -9,7 +9,7 @@ namespace PSF.Dominio.Entities
 {
     public class ESF
     {
-        public int esfId { get; set; }
+        public int EsfId { get; set; }
         public Endereco endereco { get; set; }
         public Usuario usuario { get; set; }
     }

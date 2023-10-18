@@ -9,12 +9,12 @@ namespace PSF.Dominio.Entities
 {
     public class Usuario
     {
-        public int usuarioId { get; set; }
-        public string nome { get; set; }
-        public string cpf { get; set; }
-        public string email { get; set; }
-        public bool status { get; set; }
-        public Endereco endereco { get; set; }
+        public int UsuarioId { get; set; }
+        public string Nome { get; set; }
+        public string CPF { get; set; }
+        public string Email { get; set; }
+        public bool Status { get; set; }
+        public Endereco Endereco { get; set; }
         public TipoDeFuncionario tipoDeFuncionario { get; set; }
     }
 }

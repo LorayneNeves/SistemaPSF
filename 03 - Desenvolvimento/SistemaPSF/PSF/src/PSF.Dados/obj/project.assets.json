@@ -2642,11 +2642,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\loray\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\PSF.Dados.csproj",
+      "projectUniqueName": "C:\\Users\\loray\\source\\repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\PSF.Dados.csproj",
       "projectName": "PSF.Dados",
-      "projectPath": "C:\\Users\\loray\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\PSF.Dados.csproj",
+      "projectPath": "C:\\Users\\loray\\source\\repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\PSF.Dados.csproj",
       "packagesPath": "C:\\Users\\loray\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\loray\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\obj\\",
+      "outputPath": "C:\\Users\\loray\\source\\repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\loray\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2663,8 +2663,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\loray\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj": {
-              "projectPath": "C:\\Users\\loray\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj"
+            "C:\\Users\\loray\\source\\repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj": {
+              "projectPath": "C:\\Users\\loray\\source\\repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "k67aJuasK/bsZq62eIYL15xJds907dRtADznXIN/wSuj4wQCdbCfq5kv206W5jLdi1YRYLGknqY68jOJUC5FQA==",
+  "dgSpecHash": "Bl5DaEIiDItU3k7Fj0HGr9AfLFeiII55BFtdY37VlhHMrGWCN8Fp7uvceta2+9YhyG96Id2vZVjtAF4dRKWodA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\loray\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.CrossCutting\\PSF.CrossCutting.csproj",
+  "projectFilePath": "C:\\Users\\loray\\source\\repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.CrossCutting\\PSF.CrossCutting.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

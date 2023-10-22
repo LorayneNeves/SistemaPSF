@@ -34,7 +34,7 @@ namespace PSF.WebApp.Controllers
         {
             var objeto = db
                 .Usuario
-                .First(f => f.UsuarioId == usuarioId);
+                .FirstOrDefault(f => f.UsuarioId == usuarioId);
 
             db.Usuario.Remove(objeto);
             db.SaveChanges();

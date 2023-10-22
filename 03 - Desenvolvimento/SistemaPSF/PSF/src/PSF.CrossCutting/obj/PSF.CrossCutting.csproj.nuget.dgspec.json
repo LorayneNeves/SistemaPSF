@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\loray\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.CrossCutting\\PSF.CrossCutting.csproj": {}
+    "C:\\Users\\loray\\source\\repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.CrossCutting\\PSF.CrossCutting.csproj": {}
   },
   "projects": {
-    "C:\\Users\\loray\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.CrossCutting\\PSF.CrossCutting.csproj": {
+    "C:\\Users\\loray\\source\\repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.CrossCutting\\PSF.CrossCutting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\loray\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.CrossCutting\\PSF.CrossCutting.csproj",
+        "projectUniqueName": "C:\\Users\\loray\\source\\repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.CrossCutting\\PSF.CrossCutting.csproj",
         "projectName": "PSF.CrossCutting",
-        "projectPath": "C:\\Users\\loray\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.CrossCutting\\PSF.CrossCutting.csproj",
+        "projectPath": "C:\\Users\\loray\\source\\repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.CrossCutting\\PSF.CrossCutting.csproj",
         "packagesPath": "C:\\Users\\loray\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\loray\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.CrossCutting\\obj\\",
+        "outputPath": "C:\\Users\\loray\\source\\repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.CrossCutting\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\loray\\AppData\\Roaming\\NuGet\\NuGet.Config",

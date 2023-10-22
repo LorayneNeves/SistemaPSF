@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\loray\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Servicos\\PSF.Servicos.csproj": {}
+    "C:\\Users\\loray\\source\\repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Servicos\\PSF.Servicos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\loray\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Servicos\\PSF.Servicos.csproj": {
+    "C:\\Users\\loray\\source\\repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Servicos\\PSF.Servicos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\loray\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Servicos\\PSF.Servicos.csproj",
+        "projectUniqueName": "C:\\Users\\loray\\source\\repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Servicos\\PSF.Servicos.csproj",
         "projectName": "PSF.Servicos",
-        "projectPath": "C:\\Users\\loray\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Servicos\\PSF.Servicos.csproj",
+        "projectPath": "C:\\Users\\loray\\source\\repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Servicos\\PSF.Servicos.csproj",
         "packagesPath": "C:\\Users\\loray\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\loray\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Servicos\\obj\\",
+        "outputPath": "C:\\Users\\loray\\source\\repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Servicos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\loray\\AppData\\Roaming\\NuGet\\NuGet.Config",

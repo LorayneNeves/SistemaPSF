@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BCZg1ffLsuSz6ckz3fGnfJ+tcFidZKiM4a0eqIZOCW3t2y8Prtm7UDBiTg0qxVZPrL9TfHV4OhFShdGuyJlnpA==",
+  "dgSpecHash": "frnwq0CTNP8EaOGRrfK2P9PMTvwHSESIiOBF8n0F+t9iDA2z0OKz7oUvWx0I6ZR5uzYnJflTEZxQ0AqL8WCgSA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\loray\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.WebApp\\PSF.WebApp.csproj",
+  "projectFilePath": "C:\\Users\\loray\\source\\repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.WebApp\\PSF.WebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\loray\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\loray\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

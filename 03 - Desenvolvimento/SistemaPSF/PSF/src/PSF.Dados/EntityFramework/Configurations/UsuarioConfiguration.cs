@@ -23,14 +23,14 @@ namespace PSF.Dados.EntityFramework.Configurations
                 .HasColumnType("int");
 
             builder
+               .Property(f => f.Nome)
+               .HasColumnName("Nome")
+               .HasColumnType("varchar(100)");
+
+            builder
                 .Property(f => f.CPF)
                 .HasColumnName("CPF")
                 .HasColumnType("char(11)");
-
-            builder
-                .Property(f => f.Nome)
-                .HasColumnName("Nome")
-                .HasColumnType("varchar(100)");
 
             builder
                 .Property(f => f.Email)

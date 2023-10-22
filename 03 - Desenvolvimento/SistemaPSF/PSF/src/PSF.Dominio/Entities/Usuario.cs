@@ -14,7 +14,7 @@ namespace PSF.Dominio.Entities
         public string CPF { get; set; }
         public string Email { get; set; }
         public bool Status { get; set; }
-        public Endereco Endereco { get; set; }
-        public TipoDeFuncionario tipoDeFuncionario { get; set; }
+        //public Endereco Endereco { get; set; }
+        //public TipoDeFuncionario tipoDeFuncionario { get; set; }
     }
 }

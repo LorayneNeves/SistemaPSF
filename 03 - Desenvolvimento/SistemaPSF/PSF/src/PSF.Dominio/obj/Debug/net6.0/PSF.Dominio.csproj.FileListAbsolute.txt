@@ -1,0 +1,11 @@
+C:\Users\loray\Source\Repos\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.Dominio\bin\Debug\net6.0\PSF.Dominio.deps.json
+C:\Users\loray\Source\Repos\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.Dominio\bin\Debug\net6.0\PSF.Dominio.dll
+C:\Users\loray\Source\Repos\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.Dominio\bin\Debug\net6.0\PSF.Dominio.pdb
+C:\Users\loray\Source\Repos\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.Dominio\obj\Debug\net6.0\PSF.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\loray\Source\Repos\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.Dominio\obj\Debug\net6.0\PSF.Dominio.AssemblyInfoInputs.cache
+C:\Users\loray\Source\Repos\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.Dominio\obj\Debug\net6.0\PSF.Dominio.AssemblyInfo.cs
+C:\Users\loray\Source\Repos\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.Dominio\obj\Debug\net6.0\PSF.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\loray\Source\Repos\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.Dominio\obj\Debug\net6.0\PSF.Dominio.dll
+C:\Users\loray\Source\Repos\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.Dominio\obj\Debug\net6.0\refint\PSF.Dominio.dll
+C:\Users\loray\Source\Repos\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.Dominio\obj\Debug\net6.0\PSF.Dominio.pdb
+C:\Users\loray\Source\Repos\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.Dominio\obj\Debug\net6.0\ref\PSF.Dominio.dll

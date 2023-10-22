@@ -8,14 +8,7 @@
 
         public bool Autenticado()
         {
-            if (Usuario == "renato" && Senha == "123")
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return Usuario == "renato" && Senha == "123";
         }
     }
 }

@@ -1,0 +1,39 @@
+﻿@using PSF.Dominio.Entities;
+
+@model IEnumerable<Usuario>
+
+<table class="table table-striped table-sm">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>CPF</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.UsuarioId
+                </td>
+                <td>
+                    @item.CPF
+                </td>
+                <td>
+                    @item.Nome
+                </td>
+                <td>
+                    @item.Email
+                </td>
+                <td>
+                    <a class="btn btn-danger btn-xs" asp-action="Excluir" asp-controller="Usuario" asp-route-funcionarioId="@item.UsuarioId">
+                        <i class="glyphicon glyphicon-trash"></i>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

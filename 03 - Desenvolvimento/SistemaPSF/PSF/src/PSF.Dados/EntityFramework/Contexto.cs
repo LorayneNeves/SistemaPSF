@@ -12,7 +12,7 @@ namespace PSF.Dados.EntityFramework
 {
     public class Contexto : DbContext
     {
-        public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Usuario> Usuario { get; set; }
 
         public Contexto() : base()
         {
@@ -20,15 +20,15 @@ namespace PSF.Dados.EntityFramework
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data source = 10.107.176.41.14; 
+            optionsBuilder.UseSqlServer(@"Data source = 201.62.57.93, 1434; 
                                     Database = BD044860; 
-                                    User ID = RA04486; 
+                                    User ID = RA044860; 
                                     Password = 044860;
                                     TrustServerCertificate=True");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration(new UsuarioConfigurations());
+            modelBuilder.ApplyConfiguration(new UsuarioConfiguration());
         }
     }
 }

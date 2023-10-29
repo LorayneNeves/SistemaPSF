@@ -1,39 +1,111 @@
 ﻿@using PSF.Dominio.Entities;
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/site.css" />
+    <!-- Link para o arquivo CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Link para o arquivo JavaScript do Bootstrap (jQuery incluído) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <title>Lista Usuarios</title>
+</head>
+
 
 @model IEnumerable<Usuario>
 
-<table class="table table-striped table-sm">
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>CPF</th>
-            <th>Nome</th>
-            <th>Email</th>
-            <th>Ações</th>
+<table class="table table-striped table-sm" >
+    <thead class="br-list horizontal" role="list" color="blue">
+        <tr class="header">
+            <div class="title"><h5><i class="fas fa-heartbeat" aria-hidden="true"></i>Usuários Cadastrados</h5></div>
+
+            <th class="br-item" role="listitem"><b>Código Funcionário</b></th>
+            <th class="br-item" role="listitem"><b>Nome</b></th>
+            <th class="br-item" role="listitem"><b>CPF</b></th>
+            <th class="br-item" role="listitem"><b>Email</b></th>
+            <th class="br-item" role="listitem"><b>Status</b></th>
+            <th class="br-item" role="listitem" ><b>Ações</b></th>
+
+            <span class="br-divider"></span>
         </tr>
     </thead>
-    <tbody>
+
+    <tbody class="header">
         @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @item.UsuarioId
+        {          
+            <tr tr class="br-list horizontal">
+                <td class="br-item" role="listitem">@item.UsuarioId</td>
+
+                <td class="br-item" role="listitem">@item.Nome </td>
+
+                <td class="br-item" role="listitem">@item.CPF</td>
+
+                <td class="br-item" role="listitem"> @item.Email</td>
+
+                <td class="br-item" role="listitem">
+                    @if (item.Status){ 
+                        <span class="text-success">Ativo</span>
+                    } else{
+                        <span class="text-danger">Inativo</span>
+                    }                   
                 </td>
-                <td>
-                    @item.Nome
+
+                <td class="br-item" role="listitem">
+                    <a class="btn btn-danger btn-xs delete-button" 
+                        asp-action="Excluir" 
+                        asp-controller="Usuario" 
+                        asp-route-usuarioId="@item.UsuarioId">
+                         <b class="fa fa-trash"></b>
+                    </a>                        
                 </td>
-                <td>
-                    @item.CPF
-                </td>
-                <td>
-                    @item.Email
-                </td>
-                <td>
-                    <a class="btn btn-danger btn-xs" asp-action="Excluir" asp-controller="Usuario" asp-route-funcionarioId="@item.UsuarioId">
-                        <i class="glyphicon glyphicon-trash"></i>
-                    </a>
-                </td>
-            </tr>
+               
+            </tr>         
         }
-    </tbody>
+    </tbody> 
 </table>
+<div class="modal fade" id="confirm-delete-modal" tabindex="-1" role="dialog" aria-labelledby="confirm-delete-modal-label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirm-delete-modal-label">Confirmar Exclusão</h5>
+                
+                    <a asp-action="Index" asp-controller="Usuario" class="btn-close" aria-label="Close">
+                        <div data-bs-theme="dark">
+                            <button type="button" class="btn-close" disabled aria-label="Close"></button>
+                        </div>
+                </a>
+                
+            </div>
+            <div class="modal-body">
+                Tem certeza de que deseja excluir este usuário?
+            </div>
+            <div class="modal-footer">
+                <a asp-action="Index" asp-controller="Usuario" class="btn btn-secondary" data-dismiss="modal">Cancelar</a>
+                <a class="btn btn-danger" id="confirm-delete-button" href="#">Excluir</a>
+            </div>
+        </div>
+    </div>
+</div>
+<span class="br-divider"></span>
+<nav class="br-pagination" aria-label="Paginação de resultados" data-total="4" data-current="1">
+    <ul>
+        <li>
+            <button class="br-button circle" type="button" data-previous-page="data-previous-page" aria-label="Página anterior">
+                <i class="fas fa-angle-left" aria-hidden="true"></i>
+            </button>
+        </li>
+        <li><a class="page active" href="javascript:void(0)">1</a></li>
+        <li><a class="page" href="javascript:void(0)">2</a></li>
+        <li><a class="page" href="javascript:void(0)">3</a></li>
+        <li><a class="page" href="javascript:void(0)">4</a></li>
+        <li>
+            <button class="br-button circle" type="button" data-next-page="data-next-page" aria-label="Página seguinte">
+                <i class="fas fa-angle-right" aria-hidden="true"></i>
+            </button>
+        </li>
+    </ul>
+</nav>
+<script src="~/js/site.js" asp-append-version="true"></script>

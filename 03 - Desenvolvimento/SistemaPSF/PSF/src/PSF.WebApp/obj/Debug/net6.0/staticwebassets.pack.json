@@ -2961,6 +2961,10 @@
       "PackagePath": "staticwebassets\\css\\Login.css"
     },
     {
+      "Id": "C:\\Users\\loray\\source\\repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.WebApp\\wwwroot\\css\\Usuarios.css",
+      "PackagePath": "staticwebassets\\css\\Usuarios.css"
+    },
+    {
       "Id": "C:\\Users\\loray\\source\\repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.WebApp\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

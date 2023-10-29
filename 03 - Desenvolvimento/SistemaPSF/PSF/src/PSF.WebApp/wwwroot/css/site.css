@@ -129,6 +129,7 @@ body {
 .br-button.sign-in img {
     max-height: var(--sign-in-img);
 }
+
 footer {
     display: none;
 }

@@ -32,12 +32,13 @@ namespace PSF.WebApp.Controllers
 
         public IActionResult Excluir(int usuarioId)
         {
-            var objeto = db
-                .Usuario
-                .First(f => f.UsuarioId == usuarioId);
+            var objeto = db.Usuario.FirstOrDefault(f => f.UsuarioId == usuarioId);
+
+
 
             db.Usuario.Remove(objeto);
-            db.SaveChanges();
+                db.SaveChanges();
+            
 
             return RedirectToAction("Index");
         }

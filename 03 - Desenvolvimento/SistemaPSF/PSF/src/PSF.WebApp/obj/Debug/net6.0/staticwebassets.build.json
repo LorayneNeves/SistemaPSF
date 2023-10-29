@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VQqdGf8MyrGtlaeAMc8QXcO0YRLMeoMw00HgwgzIqyg=",
+  "Hash": "OStqco9ruWQvuHr2pfBlHK164cEvPxbgk9neOjEwjVw=",
   "Source": "PSF.WebApp",
   "BasePath": "_content/PSF.WebApp",
   "Mode": "Default",
@@ -12629,6 +12629,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\loray\\source\\repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.WebApp\\wwwroot\\css\\Usuarios.css",
+      "SourceId": "PSF.WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\loray\\source\\repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.WebApp\\wwwroot\\",
+      "BasePath": "_content/PSF.WebApp",
+      "RelativePath": "css/Usuarios.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Usuarios.css"
     },
     {
       "Identity": "C:\\Users\\loray\\source\\repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.WebApp\\wwwroot\\favicon.ico",

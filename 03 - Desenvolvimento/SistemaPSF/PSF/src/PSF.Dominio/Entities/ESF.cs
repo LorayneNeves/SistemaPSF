@@ -1,5 +1,4 @@
-﻿using PSF.Dominio.ValueObjects;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,8 +8,6 @@ namespace PSF.Dominio.Entities
 {
     public class ESF
     {
-        public int EsfId { get; set; }
-        public Endereco endereco { get; set; }
-        public Usuario usuario { get; set; }
+        public int PsfId { get; set; }
     }
 }

@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\loray\\.nuget\\packages\\": {}
+    "C:\\Users\\044860\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\loray\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Servicos\\PSF.Servicos.csproj",
+      "projectUniqueName": "C:\\Users\\044860\\Documents\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Servicos\\PSF.Servicos.csproj",
       "projectName": "PSF.Servicos",
-      "projectPath": "C:\\Users\\loray\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Servicos\\PSF.Servicos.csproj",
-      "packagesPath": "C:\\Users\\loray\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\loray\\Source\\Repos\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Servicos\\obj\\",
+      "projectPath": "C:\\Users\\044860\\Documents\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Servicos\\PSF.Servicos.csproj",
+      "packagesPath": "C:\\Users\\044860\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\044860\\Documents\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Servicos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\loray\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\044860\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

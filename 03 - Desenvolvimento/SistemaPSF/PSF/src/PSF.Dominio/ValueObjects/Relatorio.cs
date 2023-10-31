@@ -13,7 +13,7 @@ namespace PSF.Dominio.ValueObjects
         public string Titulo { get; set; }
         public int Mes { get; set; }
         public int Ano { get; set; }
-        public ESF Esf { get; set; }
+        public ESF Psf { get; set; }
         public Usuario ACS { get; set; }
 
     //public string Micro??; 

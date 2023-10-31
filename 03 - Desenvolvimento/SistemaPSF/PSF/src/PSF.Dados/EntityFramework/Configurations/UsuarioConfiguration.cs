@@ -41,8 +41,6 @@ namespace PSF.Dados.EntityFramework.Configurations
                 .Property(f => f.Status)
                 .HasColumnName("Status")
                 .HasColumnType("bit");
-
-
         }
     }
 }

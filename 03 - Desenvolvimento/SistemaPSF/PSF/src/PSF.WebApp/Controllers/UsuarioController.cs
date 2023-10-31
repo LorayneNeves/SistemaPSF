@@ -34,12 +34,8 @@ namespace PSF.WebApp.Controllers
         {
             var objeto = db.Usuario.FirstOrDefault(f => f.UsuarioId == usuarioId);
 
-
-
             db.Usuario.Remove(objeto);
-                db.SaveChanges();
-            
-
+            db.SaveChanges();         
             return RedirectToAction("Index");
         }
     }

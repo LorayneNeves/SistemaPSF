@@ -7,12 +7,13 @@ using System.Threading.Tasks;
 
 namespace PSF.Dominio.ValueObjects
 {
-    public class IndicadorTipo
+    public enum IndicadorTipo
     {
-        public string nenhum { get; set; }
-        public string covid { get; set; }
-        public string planilhaChecagem { get; set; }
-        public string medicacao { get; set; }
-        public string vacinacao { get; set; }
+        Nenhum = 0,
+        COVID = 1,
+        PlanilhaChecagem = 2,
+        Medicacao = 3,
+        Vacinacao = 4,
+        Outro = 5
     }
 }

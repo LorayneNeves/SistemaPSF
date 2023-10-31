@@ -9,9 +9,15 @@ namespace PSF.Dominio.Entities
 {
     public class Indicador
     {
+        public Indicador()
+        {
+            IndicadorTipo = IndicadorTipo.Nenhum;
+        }
+
         public int IndicadorId { get; set; }
         public int Codigo { get; set; }
         public string Titulo { get; set; }
-        public IndicadorTipo indicadorTipo { get; set; }
+        public int IndicadorTipoId { get; set; }
+        public IndicadorTipo IndicadorTipo { get; set; }
     }
 }

@@ -15,9 +15,31 @@ namespace PSF.Dominio.Entities
         }
 
         public int IndicadorId { get; set; }
-        public int Codigo { get; set; }
         public string Titulo { get; set; }
         public int IndicadorTipoId { get; set; }
+
         public IndicadorTipo IndicadorTipo { get; set; }
+
+        public void TestarSwitchCase()
+        {
+            switch (IndicadorTipo)
+            {
+                case IndicadorTipo.Nenhum:
+                    break;
+                case IndicadorTipo.COVID:
+                    break;
+                case IndicadorTipo.PlanilhaChecagem:
+                    break;
+                case IndicadorTipo.Medicacao:
+                    break;
+                case IndicadorTipo.Vacinacao:
+                    break;
+                case IndicadorTipo.Outro:
+                    break;
+                default:
+                    break;
+            }
+        }
+
     }
 }

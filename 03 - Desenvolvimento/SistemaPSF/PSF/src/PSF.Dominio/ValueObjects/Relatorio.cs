@@ -9,10 +9,10 @@ namespace PSF.Dominio.ValueObjects
 {
     public class Relatorio
     {
-        public Evento Evento { get; set; }
+        public List <Evento> Eventos { get; set; }
         public string Titulo { get; set; }
-        public int Mes { get; set; }
-        public int Ano { get; set; }
+        public DateTime DataInicio { get; set; }
+        public DateTime DataFim { get; set; }
         public ESF Psf { get; set; }
         public Usuario ACS { get; set; }
 

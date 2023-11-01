@@ -19,6 +19,7 @@ namespace PSF.WebApp.Controllers
         public IActionResult Inserir()
         {
             var ent = new Usuario();
+
             return View(ent);
         }
 

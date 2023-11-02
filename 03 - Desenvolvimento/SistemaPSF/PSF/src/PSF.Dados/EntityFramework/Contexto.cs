@@ -13,14 +13,16 @@ namespace PSF.Dados.EntityFramework
     public class Contexto : DbContext
     {
         public DbSet<Usuario> Usuario { get; set; }
-       
+        public DbSet<Estados> Estados { get; set; }
+        public DbSet<Cidades> Cidades { get; set; }
+
         public Contexto() : base()
         {
 
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data source = bandeira,1434; 
+            optionsBuilder.UseSqlServer(@"Data source = 201.62.57.93, 1434; 
                                     Database = BD044860; 
                                     User ID = RA044860; 
                                     Password = 044860;
@@ -29,6 +31,12 @@ namespace PSF.Dados.EntityFramework
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new UsuarioConfiguration());
+            modelBuilder.ApplyConfiguration(new CidadeConfiguration());
+            modelBuilder.ApplyConfiguration(new EstadoConfiguration());
         }
+       // public List<Cidades> ObterCidades()
+       // {
+         //   return Set<Cidades>().ToList();
+      //  }
     }
 }

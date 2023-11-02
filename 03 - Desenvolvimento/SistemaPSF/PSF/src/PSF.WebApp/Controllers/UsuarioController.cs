@@ -10,17 +10,21 @@ namespace PSF.WebApp.Controllers
 
         public IActionResult Index()
         {
-            var resultado = db.Usuario
+            var usuarios = db.Usuario
                 .ToList();
 
-            return View(resultado);
+            return View(usuarios);
         }
 
         public IActionResult Inserir()
         {
-            var ent = new Usuario();
+            var dbContext = new Contexto(); // Substitua "SeuDbContext" pelo nome do seu DbContext
+            var estados = dbContext.Estados.ToList();
+            ViewBag.Estados = estados;
+            var usuario = new Usuario();
+            // Outras lógicas para a página de cadastro
+            return View(usuario);
 
-            return View(ent);
         }
 
         [HttpPost]

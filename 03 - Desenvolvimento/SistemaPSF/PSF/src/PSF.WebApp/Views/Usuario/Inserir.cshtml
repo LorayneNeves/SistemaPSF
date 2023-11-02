@@ -16,57 +16,67 @@
 
 @model Usuario
 
-<form asp-action="InserirConfirmar" asp-controller="Funcionario" method="POST" class="row g-3 needs-validation">
+<form asp-action="InserirConfirmar" asp-controller="Usuario" method="POST" class="row g-3 needs-validation">
 
   <div class="col-md-4">
-    <label for="validationCustom01" class="form-label">Nome</label>
+    <label for="validationCustom01" class="form-label">Nome Completo</label>
             <input type="text" asp-for="Nome" class="form-control" id="validationCustom01" required>
     <div class="valid-feedback">
-      Looks good!
+
+            Bom!
     </div>
   </div>
+
   <div class="col-md-4">
     <label for="validationCustom02" class="form-label">CPF</label>
             <input type="text" class="form-control" id="validationCustom02" asp-for="CPF" required>
     <div class="valid-feedback">
-      Looks good!
+
+      Bom!
     </div>
   </div>
+
   <div class="col-md-4">
     <label for="validationCustomUsername" class="form-label">Email:</label>
     <div class="input-group has-validation">
       <span class="input-group-text" id="inputGroupPrepend"></span>
-                <input type="text" class="form-control" id="validationCustomUsername" asp-for="Email" required>
+                <input type="text" class="form-control" id="validationCustomUsername" asp-for="Email" required placeholder="exemplo: anamaria@gmail.com">
       <div class="invalid-feedback">
-        Please choose a username.
+        Favor informe um e-mail de contato, esta informação será importante mais tarde.
       </div>
     </div>
   </div>
+    <div class="form-group">
+        <label for="EstadoId">Estado</label>
+        @Html.DropDownListFor(model => model.EstadoId, new SelectList(ViewBag.Estados, "EstadoId", "Nome"), "Selecione um estado", new { @class = "form-control" })
+    </div>
+
+    <!--
   <div class="col-md-6">
     <label for="validationCustom03" class="form-label">Cidade</label>
-    <input type="text" class="form-control" id="validationCustom03" required>
+        <input type="text" class="form-control" id="validationCustom03" asp-for="CId" required>
     <div class="invalid-feedback">
       Please provide a valid city.
     </div>
   </div>
+ 
   <div class="col-md-3">
-    <label for="validationCustom04" class="form-label">Estado</label>
-    <select class="form-select" id="validationCustom04" required>
-      <option selected disabled value="">Escolher...</option>
-      <option>...</option>
+        <label for="EstadoId" for="validationCustom04" class="form-label">Estado</label>
+        <select asp-for="CidadeId" asp-items="ViewBag.Cidades" class="form-select" id="validationCustom04" required>
+            <option value="">Selecione a cidade...</option>
     </select>
     <div class="invalid-feedback">
       Please select a valid state.
     </div>
   </div>
+ 
   <div class="col-md-3">
     <label for="validationCustom05" class="form-label">CEP</label>
-    <input type="text" class="form-control" id="validationCustom05" required>
+        <input type="text" class="form-control" id="validationCustom05" asp-for="endereco.Cep" required>
     <div class="invalid-feedback">
-      Please provide a valid zip.
     </div>
   </div>
-  
+    -->
   <div class="col-12">
     <button class="btn btn-primary" type="submit">Confirmar Cadastro</button>
   </div>

@@ -14,6 +14,7 @@ namespace PSF.Dominio.Entities
         public Bairro bairro { get; set; }
         public int Numero { get; set; }
         public string Cep { get; set; }
-        public Cidade cidade { get; set; }
+        public Estados Estado { get; set; }
+        public Cidades Cidade { get; set; }
     }
 }

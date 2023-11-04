@@ -12,10 +12,7 @@ namespace PSF.Dominio.Entities
 {
     public class Usuario
     {
-        public Usuario()
-        {
-            UsuarioTipo = UsuarioTipo.Padrao;
-        }
+        
         public int UsuarioId { get; set; }
         public string Nome { get; set; }
         public string CPF { get; set; }
@@ -26,5 +23,7 @@ namespace PSF.Dominio.Entities
         public UsuarioTipo UsuarioTipo { get; set; }
 
         // public ESF Psf { get; set; }
+
+
     }
 }

@@ -42,7 +42,25 @@ namespace PSF.Dados.EntityFramework.Configurations
                 .HasColumnName("Status")
                 .HasColumnType("bit");
 
+
+            builder
+             .Property(f => f.UsuarioTipoId)
+             .HasColumnName("EstadoId") // Nome da coluna na tabela "Cidades" que será a FK
+             .HasColumnType("int");
+
+            // Define a relação de chave estrangeira com a tabela "Estados"
+
+
+
+
+            builder
+            .Property(f => f.UsuarioTipoId)
+            .HasColumnName("UsuarioTipoId") // Nome da coluna na tabela "Cidades" que será a FK
+            .HasColumnType("int");
+
            
+            
+
         }
     }
 }

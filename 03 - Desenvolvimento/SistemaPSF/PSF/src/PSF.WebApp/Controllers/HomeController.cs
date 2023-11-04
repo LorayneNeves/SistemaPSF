@@ -16,6 +16,7 @@ namespace PSF.WebApp.Controllers
 
         public IActionResult Index()
         {
+            
             return View();
         }
 

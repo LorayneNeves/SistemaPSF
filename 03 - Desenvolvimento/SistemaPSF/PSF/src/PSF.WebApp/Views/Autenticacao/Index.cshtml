@@ -1,9 +1,67 @@
-﻿<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="/css/Login.css">
-</head>
+﻿
+@model UsuarioViewModel
+@{
+	Layout = "_LayoutDeslogado";
+	ViewData["Title"] = "login";
+}
+<body>
+	@if (TempData["MensagemErro"] != null)
+	{
+		<div class="alert alert-danger" role="alert">
+			<button type="button" class="btn btn-danger btn-sm close-alert" aria-label="Close">X</button>
+			@Html.Raw(TempData["MensagemErro"])
+		</div>
+	}
+
+	<div class="d-flex justify-content-center align-items-center" style="height: 90vh;">
+		<div class="card" style="width: 48rem;">
+			<div class="row">
+				<div class="col">
+					<img class="card-img-top" src="@Url.Content("~/images/anatomy.png")">
+				</div>
+
+				<div class="col">
+
+					<form asp-action="Autenticar" asp-controller="Autenticacao" method="post" autocomplete="off" novalidate="">
+
+						<h3 class="identifique"><b>Identifique-se</b></h3>
+						<br />
+						<div class="form-floating mb-3">
+							<input asp-for="CPF" class="form-control" id="floatingInput" placeholder="Digite seu CPF">
+							<label for="floatingInput">CPF</label>
+							@Html.ValidationMessageFor(x => x.CPF)
+						</div>
+
+						<div class="form-floating">
+							<input asp-for="Senha" type="password" class="form-control" id="floatingPassword" placeholder="Digite sua senha">
+							<label for="floatingPassword">Senha</label>
+							@Html.ValidationMessageFor(x => x.Senha)
+						</div>
+
+						<div class="form-check">
+							<input asp-for="ManterConectado" class="form-check-input" type="checkbox" id="gridCheck" value="true">
+							<label class="form-check-label" for="gridCheck">
+								Manter-se conectado
+							</label>
+						</div>
+						<div class="login">
+							<div class="d-flex justify-content-between align-items-center">
+
+								<button type="submit" class="btn btn-primary">Entrar</button>
+								<a class="esqueci-senha" href="#">Esqueci minha senha</a>
+
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="card-body">
+				<h3 class="card-text">É um funcionario do PSF?</h3>
+				<h3> Faça seu login.</h3>
+
+			</div>
+		</div>
+
+	</div>
+</body>
 

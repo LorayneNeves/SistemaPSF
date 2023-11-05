@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 
+
 namespace PSF.Dominio.Entities
 {
     public class Usuario
-    {
-        
+    {     
         public int UsuarioId { get; set; }
         [Required(ErrorMessage ="Digite o nome do usuário")]
         public string Nome { get; set; }
@@ -21,14 +21,12 @@ namespace PSF.Dominio.Entities
         [Required(ErrorMessage = "Digite o e-mail o usuário")]
         [EmailAddress(ErrorMessage ="O e-mail informado não é valido")]
         public string Email { get; set; }
+        [Required(ErrorMessage = "Digite a senha")]
+        public string Senha { get; set; }
         public bool Status { get; set; }
+
         [Required(ErrorMessage = "Informe o perfil do usuário")]
-        //public UsuarioTipo Perfil { get; set; }
-
-        
-
+        public UsuarioTipo Perfil { get; set; }        
         // public ESF Psf { get; set; }
-
-
     }
 }

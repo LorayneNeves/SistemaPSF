@@ -37,14 +37,19 @@ namespace PSF.Dados.EntityFramework.Configurations
                 .HasColumnName("Email")
                 .HasColumnType("varchar(100)");
 
-            builder
-                .Property(f => f.Status)
+			builder
+				.Property(f => f.Senha)
+				.HasColumnName("Senha")
+				.HasColumnType("varchar(50)");
+
+			builder
+				.Property(f => f.Status)
                 .HasColumnName("Status")
                 .HasColumnType("bit");
 
 
             builder
-                 .Property(f => f.UsuarioTipo)
+                 .Property(f => f.Perfil)
                  .HasColumnName("UsuarioTipo")
                  .HasColumnType("int");
 

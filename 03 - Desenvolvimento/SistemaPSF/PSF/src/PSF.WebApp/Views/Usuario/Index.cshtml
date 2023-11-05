@@ -41,7 +41,10 @@
         <thead class="br-list horizontal" role="list" color="blue">
             <tr class="header">
                 <br>
-                <div class="title"><h3>Listagem de Usuários Cadastrados</h3></div>
+                <div class="title">
+                    <h2>Listagem de Usuários Cadastrados</h2>
+                    
+                </div>
                 <br />
                 <th class="br-item" role="listitem"><b>Código Funcionário</b></th>
                 <th class="br-item" role="listitem"><b>Nome</b></th>
@@ -78,7 +81,8 @@
                         }
                     </td>
                     <td class="br-item" role="listitem">
-
+                        @(
+                        item.Perfil == PSF.Dominio.Entities.UsuarioTipo.Admin ? "Admin" : "Padrão")
                     </td>
                     <td class="br-item" role="listitem">
                         
@@ -109,12 +113,9 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="confirm-delete-modal-label">Confirmar Exclusão</h5>
-
-                    <a asp-action="Index" asp-controller="Usuario" class="btn-close" aria-label="Close">
-                        
-                    </a>
-
+                    <a asp-action="Index" asp-controller="Usuario" class="btn-close" aria-label="Close"></a>
                 </div>
+
                 <div class="modal-body">
                     Tem certeza de que deseja excluir este usuário?
                 </div>
@@ -126,7 +127,6 @@
         </div>
     </div>
 </div>
-
 <!--
 <span class="br-divider"></span>
 <nav class="br-pagination" aria-label="Paginação de resultados" data-total="4" data-current="1">
@@ -146,7 +146,7 @@
             </button>
         </li>
     </ul>
-</nav>
+</nav>-->
 <script src="~/js/site.js" asp-append-version="true"></script>
 
--->
+

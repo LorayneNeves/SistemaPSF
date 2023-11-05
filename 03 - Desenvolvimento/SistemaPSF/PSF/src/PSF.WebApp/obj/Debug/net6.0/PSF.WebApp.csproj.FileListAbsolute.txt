@@ -346,3 +346,5 @@ C:\Users\loray\OneDrive\Área de Trabalho\SistemaPSF\03 - Desenvolvimento\Sistem
 C:\Users\loray\OneDrive\Área de Trabalho\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
 C:\Users\loray\OneDrive\Área de Trabalho\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\bin\Debug\net6.0\System.Web.WebPages.dll
 C:\Users\loray\OneDrive\Área de Trabalho\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll
+C:\Users\loray\OneDrive\Área de Trabalho\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\obj\Debug\net6.0\scopedcss\Views\Shared\_LayoutDeslogado.cshtml.rz.scp.css
+C:\Users\loray\OneDrive\Área de Trabalho\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\bin\Debug\net6.0\Newtonsoft.Json.dll

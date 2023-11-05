@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 using PSF.Dados.EntityFramework;
 using PSF.Dominio.Entities;
 
@@ -24,19 +26,33 @@ namespace PSF.WebApp.Controllers
         }
 
         [HttpPost]
-        public IActionResult InserirConfirmar(Usuario ent)
+        public IActionResult InserirConfirmar(Usuario usuario)
         {
-            db.Usuario.Add(ent);
-            db.SaveChanges();
-            return RedirectToAction("Index");
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    db.Usuario.Add(usuario);
+                    db.SaveChanges();
+                    TempData["MensagemSucesso"] = "Usuário cadastrado com sucesso";
+                    return RedirectToAction("Index");
+                }
+                return View(usuario);
+            }
+            catch (System.Exception erro)
+            {
+                TempData["MensagemErro"] = $"Ops! Não conseguimos cadastrar o usuário, tente novamente. <br /> Detalhe do erro: {erro.Message}";
+                return RedirectToAction("Index");
+            }
         }
 
         public IActionResult Excluir(int usuarioId)
         {
+
             var objeto = db.Usuario.FirstOrDefault(f => f.UsuarioId == usuarioId);
 
             db.Usuario.Remove(objeto);
-            db.SaveChanges();         
+            db.SaveChanges();
             return RedirectToAction("Index");
         }
     }

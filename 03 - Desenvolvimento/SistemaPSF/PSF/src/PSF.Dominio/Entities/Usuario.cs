@@ -14,13 +14,17 @@ namespace PSF.Dominio.Entities
     {
         
         public int UsuarioId { get; set; }
+        [Required(ErrorMessage ="Digite o nome do usuário")]
         public string Nome { get; set; }
+        [Required(ErrorMessage = "Digite o CPF do usuário")]
         public string CPF { get; set; }
+        [Required(ErrorMessage = "Digite o e-mail o usuário")]
+        [EmailAddress(ErrorMessage ="O e-mail informado não é valido")]
         public string Email { get; set; }
         public bool Status { get; set; }
-        public int UsuarioTipoId { get; set; }
+        public int UsuarioTipo { get; set; }
 
-        public UsuarioTipo UsuarioTipo { get; set; }
+        
 
         // public ESF Psf { get; set; }
 

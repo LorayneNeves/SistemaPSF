@@ -9,6 +9,7 @@
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900&amp;display=swap" />   
     <link rel="stylesheet" href="/core/dist/core.min.css" />    
+    <link href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -28,14 +29,12 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="br-sign-in" asp-area="" asp-controller="Autenticacao" asp-action="Login"> Entrar com&nbsp;<img class="img-gov-br" src="https://www.gov.br/++theme++padrao_govbr/img/govbr-colorido-b.png" alt="gov.br" /></a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Autenticacao" asp-action="Login"> Entrar </a>
                         </li>
                             <li class="nav-item">
-                                <a class="br-sign-in" asp-area="" asp-controller="Usuario" asp-action="Index">Usuarios</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Usuario" asp-action="Index">Usuários</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="br-sign-in" asp-area="" asp-controller="Inserir" asp-action="Index">Cadastrar Usuarios</a>
-                            </li>
+                           
                         </ul>
                 </div>
             </div>
@@ -55,6 +54,8 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

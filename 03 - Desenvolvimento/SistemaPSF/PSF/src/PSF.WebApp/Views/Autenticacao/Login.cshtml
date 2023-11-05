@@ -4,72 +4,61 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- Font Rawline-->
-    <link rel="stylesheet"
-          href="https://cdngovbr-ds.estaleiro.serpro.gov.br/design-system/fonts/rawline/css/rawline.css" />
-    <!-- Font Raleway-->
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900&amp;display=swap" />
-    <!-- Design System GOV.BR CSS-->
-    <link rel="stylesheet"
-          href="/core/dist/core.min.css" />
-    <!-- Fontawesome-->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
-    <link rel="stylesheet" type="text/css" href="/css/Login.css"/>
-    <link rel="stylesheet " type="text/css" href="core/dist/components/footer/footer.css"/>
+   
+
     <title>@ViewData["Title"] - PSF.Login</title>
 
 </head>
 
-<body>
- 
-	<div class="container">
-        <div class="card" style="width: 18rem;">
-            <img src="@Url.Content("~/images/anatomy.png")" alt="Logomarca GovBR">
-            <div class="card-body">
-                <p class="card-text">É um funcionario do PSF? Faça seu login com a conta gov.</p>
-            </div>
-        </div>
+<body >
+	<div class="d-flex justify-content-center align-items-center" style="height: 90vh;">
+		<div class="card" style="width: 48rem;">
+			<div class="row" >
+				<div class="col">
+					<img class="card-img-top" src="@Url.Content("~/images/anatomy.png")">
+				</div>
 
-        <main id="main-signin">           
-			<form method="post" id="loginData" action="https://sso.acesso.gov.br/login?client_id=www.gov.br&amp;authorization_id=18a77823930" autocomplete="off" novalidate="">
-				<div class="card" id="login-cpf">
-					<input type="hidden" name="_csrf" value="f8074b4b-a8ec-4123-a751-baa0948b5ee0">
-					<h3>Identifique-se com gov.br</h3>
-					<div class="item-login-signup-ways" onclick="accordion('accordion-panel-id')">
-						<a tabindex="3">
-							<img src="~/images/id-card-solid.png">
-							Número do CPF
-						</a>
-					</div>
-					<div class="accordion-panel" id="accordion-panel-id">
-						<p>Digite seu CPF para <strong>acessar</strong> sua conta gov.br</p>
-						<label for="cpf">CPF</label>
-						<input id="accountId" name="accountId" autocomplete="new-password" tabindex="1" type="tel" value="" placeholder="Digite seu CPF" aria-invalid="false">
-                        <div>
-                            <div class="br-input input-button">
-                                <label for="input-password">Senha</label>
-                                <input id="input-password" type="password" placeholder="Digite sua senha" />
-                                <button class="br-button" type="button" aria-label="Mostrar senha">
-                                    <i class="fas fa-eye" aria-hidden="true"></i>
-                                </button>
+
+				<div class="col">
+                
+				<form  method="post" id="loginData" autocomplete="off" novalidate="">
+
+                        <h3 class="identifique"><b>Identifique-se</b></h3>
+					<br />
+						<div class="form-floating mb-3">
+							<input type="email" class="form-control" id="floatingInput" placeholder="Digite seu CPF">
+							<label for="floatingInput">CPF</label>
+						</div>
+
+						<div class="form-floating">
+							<input type="password" class="form-control" id="floatingPassword" placeholder="Digite sua senha">
+							<label for="floatingPassword">Senha</label>
+						</div>
+
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="gridCheck">
+								<label class="form-check-label" for="gridCheck">
+									Manter-se conectado
+								</label>
+				</div>
+				<div class="login">
+						<div class="d-flex justify-content-between align-items-center">
+					
+							<button type="submit" class="btn btn-primary">Entrar</button>
+							<a class="esqueci-senha" href="#">Esqueci minha senha</a>
+
                             </div>
                         </div>
-						<div class="button-panel" id="login-button-panel">
-							<button name="operation" value="enter-account-id" class="button-continuar" type="submit" tabindex="2">Continuar</button>
-						</div>
+				</form>
 					</div>
-					
-					<div class="entenda-id-govbr" id="entenda-id-govbr">
-						<span>
-							<i class="fa fa-info-circle"></i><a tabindex="6" href="https://www.gov.br/governodigital/pt-br/conta-gov-br/conta-gov-br/" id="entenda-id-govbr-a">Entenda a conta gov.br</a>
-							<a tabindex="6" href="https://cadastro.acesso.gov.br/termo-de-uso" style="display: block;" target="_blank" id="termo-de-uso">Termo de Uso e Aviso de Privacidade</a>
-						</span>
-					</div>
-				</div>
-			</form>
-		</main>
+			</div>
+			<div class="card-body">
+				<h3 class="card-text">É um funcionario do PSF?</h3>
+				<h3> Faça seu login.</h3>
+
+			</div>
+			</div>
+		
 	</div>
 </body>
 

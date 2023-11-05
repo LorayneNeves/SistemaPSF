@@ -21,6 +21,7 @@
   <div class="col-md-4">
     <label for="validationCustom01" class="form-label">Nome Completo</label>
             <input type="text" asp-for="Nome" class="form-control" id="validationCustom01" required>
+            @Html.ValidationMessageFor(x => x.Nome)
     <div class="valid-feedback">
 
             Bom!
@@ -30,6 +31,8 @@
   <div class="col-md-4">
     <label for="validationCustom02" class="form-label">CPF</label>
             <input type="text" class="form-control" id="validationCustom02" asp-for="CPF" required>
+        @Html.ValidationMessageFor(x => x.CPF)
+        <span asp-validation-for="CPF" class="text-danger"></span>
     <div class="valid-feedback">
 
       Bom!
@@ -49,6 +52,8 @@
 
             
                 <input type="text" class="form-control" id="validationCustomUsername" asp-for="Email" required placeholder="exemplo: anamaria@gmail.com">
+            @Html.ValidationMessageFor(x => x.Email)
+
       <div class="invalid-feedback">
         Favor informe um e-mail de contato, esta informação será importante mais tarde.
       </div>
@@ -107,3 +112,4 @@
   </div>
 </form>
 
+  <script></script>

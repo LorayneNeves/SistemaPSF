@@ -11,30 +11,30 @@ namespace PSF.Dominio.Entities
     {
         public Indicador()
         {
-            IndicadorTipo = IndicadorTipo.Nenhum;
+            IndicadorTipo = IndicadorTipoEnum.Nenhum;
         }
 
         public int IndicadorId { get; set; }
         public string Titulo { get; set; }
         public int IndicadorTipoId { get; set; }
 
-        public IndicadorTipo IndicadorTipo { get; set; }
+        public IndicadorTipoEnum IndicadorTipo { get; set; }
 
         public void TestarSwitchCase()
         {
             switch (IndicadorTipo)
             {
-                case IndicadorTipo.Nenhum:
+                case IndicadorTipoEnum.Nenhum:
                     break;
-                case IndicadorTipo.COVID:
+                case IndicadorTipoEnum.COVID:
                     break;
-                case IndicadorTipo.PlanilhaChecagem:
+                case IndicadorTipoEnum.PlanilhaChecagem:
                     break;
-                case IndicadorTipo.Medicacao:
+                case IndicadorTipoEnum.Medicacao:
                     break;
-                case IndicadorTipo.Vacinacao:
+                case IndicadorTipoEnum.Vacinacao:
                     break;
-                case IndicadorTipo.Outro:
+                case IndicadorTipoEnum.Outro:
                     break;
                 default:
                     break;

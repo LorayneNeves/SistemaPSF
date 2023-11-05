@@ -1,4 +1,5 @@
 ﻿@using PSF.Dominio.Entities;
+@using PSF.Dominio.ValueObjects;
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -60,17 +61,17 @@
     </div>
   </div>
     <div class="grid text-center">
-            <select class="form-select form-select-sm" aria-label="Small select example">
+            <select asp-for="Perfil" class="form-select form-select-sm" aria-label="Small select example">
                 <option selected>Selecione o tipo de perfil do usuário</option>
-                <option value="1">Admin</option>
-                <option value="2">Padrão</option>
+                <option value="@UsuarioTipo.Admin">Administrador</option>
+                <option value="@UsuarioTipo.Padrao">Padrão</option>
             </select>
          </div>
     <div class="grid text-center">
-        <select class="form-select form-select-sm" aria-label="Small select example">
+        <select asp-for="Status" class="form-select form-select-sm" aria-label="Small select example">
             <option selected>Status do usuário</option>
-            <option value="1">Ativar</option>
-            <option value="2">Desativar</option>
+            <option value="true">Ativar</option>
+            <option value="false">Desativar</option>
         </select>
     </div>
     <!-- CADASTRO DE ENDEREÇO

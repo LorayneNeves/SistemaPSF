@@ -22,7 +22,8 @@ namespace PSF.Dominio.Entities
         [EmailAddress(ErrorMessage ="O e-mail informado não é valido")]
         public string Email { get; set; }
         public bool Status { get; set; }
-        public int UsuarioTipo { get; set; }
+        [Required(ErrorMessage = "Informe o perfil do usuário")]
+        //public UsuarioTipo Perfil { get; set; }
 
         
 

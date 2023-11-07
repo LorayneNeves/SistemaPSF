@@ -1,8 +1,9 @@
 ﻿$(document).ready(function () {
-    $('#table-usuarios').DataTable({
+    var tabela = $('#table-usuarios').DataTable({
         "ordering": true,
         "paging": true,
         "searching": true,
+        "stateSave": true,
         "oLanguage": {
             "sEmptyTable": "Nenhum registro encontrado na tabela",
             "sInfo": "Mostrar _START_ até _END_ de _TOTAL_ registros",
@@ -27,10 +28,9 @@
             }
         }
     });
-});
 
-$(document).ready(function () {
-    $('.delete-button').on('click', function (e) {
+    tabela.cells().nodes().to$().find('.delete-button').on('click', function (e) {
+    //$('.delete-button').on('click', function (e) {
         e.preventDefault();
 
         var link = $(this);
@@ -39,7 +39,11 @@ $(document).ready(function () {
         $('#confirm-delete-button').attr('href', link.attr('href'));
         $('#confirm-delete-modal').modal('show');
     });
+
+    $('.close-alert').click(function () {
+        $('.alert').hide('hide');
+    });
+
 });
-$('.close-alert').click(function () {
-    $('.alert').hide('hide');
-});
+
+

@@ -8,6 +8,6 @@ namespace PSF.Dominio.Entities
 {
     public class ESF
     {
-        public int PsfId { get; set; }
+        public int EsfId { get; set; }
     }
 }

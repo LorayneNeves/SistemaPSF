@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ia5KPAOciuv9Eh+LgRacd/TQfoXER3TchVmSWf2jYISOhqaaW4+9IZxJAHxZmjqQ0AW3EiLivYvrSLdU6f0IRg==",
+  "dgSpecHash": "f4hAmcmiRc/do4gvwivcrl0bsYX5n6jGApBfhWcDkyAt1VT6gbADhuRO5ueZbDsQWrZXQ7Cp4z2ce5IQ+VMf3g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\044860\\Downloads\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.WebApp\\PSF.WebApp.csproj",
+  "projectFilePath": "C:\\Users\\044860\\Desktop\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.WebApp\\PSF.WebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\044860\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\044860\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

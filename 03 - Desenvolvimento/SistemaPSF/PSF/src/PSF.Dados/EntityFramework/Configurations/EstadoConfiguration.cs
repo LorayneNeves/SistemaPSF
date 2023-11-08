@@ -19,7 +19,7 @@ namespace PSF.Dados.EntityFramework.Configurations
             builder
                 .Property(f => f.EstadoId)
                 .UseIdentityColumn()
-                .HasColumnName("EstadosId")
+                .HasColumnName("EstadoId")
                 .HasColumnType("int");
 
             builder

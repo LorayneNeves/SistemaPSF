@@ -60,10 +60,6 @@ namespace PSF.Dados.EntityFramework.Configurations
                        .HasColumnName("CidadeId") // Nome da coluna na tabela "Cidades" que será a FK
                        .HasColumnType("int");
 
-            builder
-               .HasOne(c => c.Estado) // Propriedade de navegação para "Estados"
-               .WithMany() // Indique a multiplicidade conforme necessário
-               .HasForeignKey(c => c.EstadoId); // Indique a propriedade que é a FK
 
         }
     

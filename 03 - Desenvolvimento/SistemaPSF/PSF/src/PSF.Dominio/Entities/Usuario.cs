@@ -26,7 +26,10 @@ namespace PSF.Dominio.Entities
         public bool Status { get; set; }
 
         [Required(ErrorMessage = "Informe o perfil do usuário")]
-        public UsuarioTipo Perfil { get; set; }        
-        // public ESF Psf { get; set; }
+        public UsuarioTipo Perfil { get; set; }
+
+         public ESF Esf { get; set; }
+         public ESF EsfId { get; set; }
+
     }
 }

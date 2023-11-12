@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using PSF.Dados.EntityFramework;
@@ -20,6 +21,9 @@ namespace PSF.WebApp.Controllers
 
         public IActionResult Inserir()
         {
+            var esf = db.Esf.ToList();
+            // Armazenar a lista de estados na ViewBag
+            ViewBag.Estados = new SelectList(esf, "EsfId", "Nome");
             var usuario = new Usuario();
             return View(usuario);
 

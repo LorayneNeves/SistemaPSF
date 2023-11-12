@@ -85,6 +85,16 @@
             <option value="false">Desativar</option>
         </select>
     </div>
+
+    <div class="col-md-6">
+        <label for="validationCustom04" class="form-label">ESF</label>
+        <select asp-for="Esf.EsfId" asp-items="@ViewBag.Esf" class="form-select" id="validationCustom04" required>
+            <option value="">Selecione o ESF...</option>
+        </select>
+        <div class="invalid-feedback">
+            Por favor, selecione um estado válido.
+        </div>
+    </div>
     <!-- CADASTRO DE ENDEREÇO
 
     <div class="form-group">
@@ -124,4 +134,3 @@
   </div>
 </form>
 
-  <script></script>

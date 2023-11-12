@@ -15,6 +15,8 @@ namespace PSF.Dados.EntityFramework
         public DbSet<Usuario> Usuario { get; set; }
         public DbSet<Estados> Estados { get; set; }
         public DbSet<Cidades> Cidades { get; set; }
+        public DbSet<ESF> Esf { get; set; }
+        public DbSet<Endereco> Endereco { get; set; }
 
         public Contexto() : base()
         {
@@ -22,17 +24,20 @@ namespace PSF.Dados.EntityFramework
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data source = BANDEIRA, 1434; 
+            optionsBuilder.UseSqlServer(@"Data source = 201.62.57.93, 1434; 
                                     Database = BD044860; 
                                     User ID = RA044860; 
                                     Password = 044860;
                                     TrustServerCertificate=True");
         }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new UsuarioConfiguration());
             modelBuilder.ApplyConfiguration(new CidadeConfiguration());
             modelBuilder.ApplyConfiguration(new EstadoConfiguration());
+            modelBuilder.ApplyConfiguration(new EsfConfiguration());
+            modelBuilder.ApplyConfiguration(new EnderecoConfiguration());
         }
        // public List<Cidades> ObterCidades()
        // {

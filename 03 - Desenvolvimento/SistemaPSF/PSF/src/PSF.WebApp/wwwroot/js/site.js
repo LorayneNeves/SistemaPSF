@@ -46,4 +46,24 @@
 
 });
 
-
+$(document).ready(function () {
+    $('#selectCidade').select2({
+        ajax: {
+            url: '/Cidades/PesquisarCidades',
+            dataType: 'json',
+            delay: 250,
+            data: function (params) {
+                return {
+                    term: params.term,
+                };
+            },
+            processResults: function (data) {
+                return {
+                    results: data,
+                };
+            },
+            cache: true
+        },
+        minimumInputLength: 1
+    });
+});

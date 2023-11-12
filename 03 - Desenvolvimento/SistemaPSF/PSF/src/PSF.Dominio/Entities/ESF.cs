@@ -8,6 +8,10 @@ namespace PSF.Dominio.Entities
 {
     public class ESF
     {
+        
         public int EsfId { get; set; }
+        public Endereco Enderecos { get; set; }
+        public int EnderecoId { get; set; }
+        public string Nome { get; set; }
     }
 }

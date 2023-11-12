@@ -1,4 +1,4 @@
-﻿@using PSF.Dominio.Entities;
+﻿<!-- @using PSF.Dominio.Entities;
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -14,35 +14,22 @@
 </head>
 
 
-@model IEnumerable<Estados>
+<form asp-action="InserirConfirmar" method="post">
 
-    <table class="table table-striped table-sm" id="table-estados">
-        <thead class="br-list horizontal" role="list" color="blue">
-            <tr class="header">
-                <br>
-                <div class="title">
-                    <h2>Listagem de CadastroEsf Cadastrados</h2>
-                    
-                </div>
-                <br />
-                <th class="br-item" role="listitem"><b>Nome estado</b></th>
-                <span class="br-divider"></span>
-            </tr>
-        </thead>
-
-        <tbody class="header">
-            @foreach (var item in Model)
-            {
-                <tr tr class="br-list horizontal">
-                <td class="br-item" role="listitem">@item.Nome</td>
-
-                </tr>
-            }
-        </tbody>
-    </table>
+    <label for="cidadeInput">Cidade:</label>
+    <input type="text" id="cidadeInput" class="form-control" placeholder="Digite o nome da cidade">
 
 
-<!--
+
+
+<select class="form-select form-select-sm" aria-label="Small select example" id="estadoDropdown">
+    <option selected>Escolha o estado</option>
+
+</select>
+
+
+    <button type="submit" class="btn btn-primary">Cadastrar</button>
+</form>
 <span class="br-divider"></span>
 <nav class="br-pagination" aria-label="Paginação de resultados" data-total="4" data-current="1">
     <ul>
@@ -63,5 +50,4 @@
     </ul>
 </nav>-->
 <script src="~/js/site.js"></script>
-
 

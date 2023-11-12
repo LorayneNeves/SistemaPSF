@@ -51,7 +51,7 @@
             </span>
             
                 <input type="text" class="form-control" id="validationCustomUsername" asp-for="Email" required placeholder="exemplo: anamaria@gmail.com">
-            @Html.ValidationMessageFor(x => x.Email)
+            
 
       <div class="invalid-feedback">
         Favor informe um e-mail de contato, esta informação será importante mais tarde.
@@ -63,7 +63,6 @@
     <div class="col-md-4">
         <label for="validationCustom01" class="form-label">Senha</label>
         <input type="password" asp-for="Senha" class="form-control" id="validationCustom01" required>
-        @Html.ValidationMessageFor(x => x.Senha)
         <div class="valid-feedback">
 
             Bom!
@@ -86,51 +85,22 @@
         </select>
     </div>
 
-    <div class="col-md-6">
+    <div class="col-md-4">
         <label for="validationCustom04" class="form-label">ESF</label>
-        <select asp-for="Esf.EsfId" asp-items="@ViewBag.Esf" class="form-select" id="validationCustom04" required>
+        <select asp-for ="EsfId" asp-items="@ViewBag.Esf" class="form-select" id="validationCustom04" required>
             <option value="">Selecione o ESF...</option>
         </select>
-        <div class="invalid-feedback">
-            Por favor, selecione um estado válido.
-        </div>
     </div>
-    <!-- CADASTRO DE ENDEREÇO
-
-    <div class="form-group">
-        <label for="EstadoId">Estado</label>
+    <br />
+    <div >
+       
+        <a asp-controller="Esf" asp-action="Index" class="btn btn-outline-info" role="button">Info ESF</a>
         
     </div>
-
-
-  <div class="col-md-6">
-    <label for="validationCustom03" class="form-label">Cidade</label>
-        <input type="text" class="form-control" id="validationCustom03" asp-for="CId" required>
-    <div class="invalid-feedback">
-      Please provide a valid city.
-    </div>
-  </div>
- 
-  <div class="col-md-3">
-        <label for="EstadoId" for="validationCustom04" class="form-label">Estado</label>
-        <select asp-for="CidadeId" asp-items="ViewBag.Cidades" class="form-select" id="validationCustom04" required>
-            <option value="">Selecione a cidade...</option>
-    </select>
-    <div class="invalid-feedback">
-      Please select a valid state.
-    </div>
-  </div>
- 
-  <div class="col-md-3">
-    <label for="validationCustom05" class="form-label">CEP</label>
-        <input type="text" class="form-control" id="validationCustom05" asp-for="endereco.Cep" required>
-    <div class="invalid-feedback">
-    </div>
-  </div>
-    -->
   <div class="col-12">
     <button class="btn btn-primary" type="submit">Confirmar Cadastro</button>
     <a class="btn btn-secondary btn-block" asp-controller="Usuario" asp-action="Index" role="button">Voltar</a>
   </div>
 </form>
+<script src="~/js/site.js"></script>
 

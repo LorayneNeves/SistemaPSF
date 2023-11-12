@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using PSF.Dados.EntityFramework;
@@ -12,6 +13,7 @@ namespace PSF.WebApp.Controllers
 
         public IActionResult Index()
         {
+            var enderecos = db.Usuario.Include(e => e.Esf.Enderecos).ToList();
             var usuarios = db.Usuario
                 .ToList();
 
@@ -20,6 +22,10 @@ namespace PSF.WebApp.Controllers
 
         public IActionResult Inserir()
         {
+            var esf = db.Esf.ToList();
+
+
+            ViewBag.Esf = new SelectList(esf, "EsfId", "Nome");
             var usuario = new Usuario();
             return View(usuario);
 
@@ -30,14 +36,12 @@ namespace PSF.WebApp.Controllers
         {
             try
             {
-                if (ModelState.IsValid)
-                {
+               
                     db.Usuario.Add(usuario);
                     db.SaveChanges();
                     TempData["MensagemSucesso"] = "Usuário cadastrado com sucesso";
                     return RedirectToAction("Index");
-                }
-                return View(usuario);
+               
             }
             catch (System.Exception erro)
             {

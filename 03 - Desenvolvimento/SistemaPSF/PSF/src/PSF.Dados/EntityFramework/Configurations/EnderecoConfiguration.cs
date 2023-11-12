@@ -17,49 +17,45 @@ namespace PSF.Dados.EntityFramework.Configurations
             builder.HasKey(f => f.EnderecoId);
 
             builder
-                .Property(f => f.EnderecoId)
-                .UseIdentityColumn()
-                .HasColumnName("EnderecoId")
+                   .Property(f => f.EnderecoId)
+                   .UseIdentityColumn()
+                   .HasColumnName("EnderecoId")
+                   .HasColumnType("int");
+
+            builder
+                  .Property(f => f.Rua)
+                  .HasColumnName("Rua")
+                  .HasColumnType("varchar(100)");
+            
+            builder
+                  .Property(f => f.Numero)
+                  .HasColumnName("Numero")
+                  .HasColumnType("int");
+            
+            builder
+                 .Property(f => f.Cep)
+                 .HasColumnName("CEP")
+                 .HasColumnType("char(8)");
+
+            builder
+                 .Property(f => f.Bairro)
+                 .HasColumnName("Bairro") 
+                 .HasColumnType("varchar(50)");
+
+            builder
+                 .Property(f => f.EstadoId)
+                 .HasColumnName("EstadoId") 
+                 .HasColumnType("int");
+           
+            builder
+                .HasOne(c => c.Estado) 
+                .WithMany() 
+                .HasForeignKey(c => c.EstadoId); 
+
+            builder
+                .Property(f => f.CidadeId)
+                .HasColumnName("CidadeId") 
                 .HasColumnType("int");
-
-            builder
-               .Property(f => f.Rua)
-               .HasColumnName("Rua")
-               .HasColumnType("varchar(100)");
-            
-            builder
-               .Property(f => f.Numero)
-               .HasColumnName("Numero")
-               .HasColumnType("int");
-            
-            builder
-               .Property(f => f.Cep)
-               .HasColumnName("CEP")
-               .HasColumnType("char(8)");
-
-            builder
-             .Property(f => f.Bairro)
-             .HasColumnName("Bairro") // Nome da coluna na tabela "Cidades" que será a FK
-             .HasColumnType("varchar(50)");
-
-
-            builder
-                        .Property(f => f.EstadoId)
-                        .HasColumnName("EstadoId") // Nome da coluna na tabela "Cidades" que será a FK
-                        .HasColumnType("int");
-
-            // Define a relação de chave estrangeira com a tabela "Estados"
-            builder
-                .HasOne(c => c.Estado) // Propriedade de navegação para "Estados"
-                .WithMany() // Indique a multiplicidade conforme necessário
-                .HasForeignKey(c => c.EstadoId); // Indique a propriedade que é a FK
-
-
-            builder
-                       .Property(f => f.CidadeId)
-                       .HasColumnName("CidadeId") // Nome da coluna na tabela "Cidades" que será a FK
-                       .HasColumnType("int");
-
 
         }
     

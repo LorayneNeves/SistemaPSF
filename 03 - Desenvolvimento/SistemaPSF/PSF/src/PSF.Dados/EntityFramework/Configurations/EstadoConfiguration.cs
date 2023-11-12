@@ -25,9 +25,7 @@ namespace PSF.Dados.EntityFramework.Configurations
             builder
                .Property(f => f.Nome)
                .HasColumnName("Nome")
-               .HasColumnType("varchar(50)");
-
-         
+               .HasColumnType("varchar(50)");        
 
         }
     

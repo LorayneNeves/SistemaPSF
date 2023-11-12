@@ -67,39 +67,13 @@
     </div>
 
 
-    <!-- CADASTRO DE ENDEREÇO
-
-      <div class="form-group">
-          <label for="EstadoId">Estado</label>
-
-      </div>
-
-
     <div class="col-md-6">
-      <label for="validationCustom03" class="form-label">Cidade</label>
-          <input type="text" class="form-control" id="validationCustom03" asp-for="CId" required>
-      <div class="invalid-feedback">
-        Please provide a valid city.
-      </div>
+        <select asp-for="Status" class="form-select form-select-sm" aria-label="Small select example">
+            <option selected>Status do Esf</option>
+            <option value="true">Ativar</option>
+            <option value="false">Desativar</option>
+        </select>
     </div>
-
-    <div class="col-md-3">
-          <label for="EstadoId" for="validationCustom04" class="form-label">Estado</label>
-          <select asp-for="CidadeId" asp-items="ViewBag.Cidades" class="form-select" id="validationCustom04" required>
-              <option value="">Selecione a cidade...</option>
-      </select>
-      <div class="invalid-feedback">
-        Please select a valid state.
-      </div>
-    </div>
-
-    <div class="col-md-3">
-      <label for="validationCustom05" class="form-label">CEP</label>
-          <input type="text" class="form-control" id="validationCustom05" asp-for="endereco.Cep" required>
-      <div class="invalid-feedback">
-      </div>
-    </div>
-      -->
     <div class="col-12">
         <button class="btn btn-primary" type="submit">Confirmar Cadastro</button>
         <a class="btn btn-secondary btn-block" asp-controller="Esf " asp-action="Index" role="button">Voltar</a>

@@ -13,11 +13,10 @@ namespace PSF.Dados.EntityFramework
     public class Contexto : DbContext
     {
         public DbSet<Usuario> Usuario { get; set; }
-        public DbSet<Estados> Estados { get; set; }
-        public DbSet<Cidades> Cidades { get; set; }
-        public DbSet<ESF> Esf { get; set; }
         public DbSet<Endereco> Endereco { get; set; }
-
+        public DbSet<Estados> Estados { get; set; }
+        public DbSet<Cidades> Cidades { get; set; }       
+        public DbSet<ESF> Esf { get; set; }
         public Contexto() : base()
         {
 
@@ -39,9 +38,5 @@ namespace PSF.Dados.EntityFramework
             modelBuilder.ApplyConfiguration(new EsfConfiguration());
             modelBuilder.ApplyConfiguration(new EnderecoConfiguration());
         }
-       // public List<Cidades> ObterCidades()
-       // {
-         //   return Set<Cidades>().ToList();
-      //  }
     }
 }

@@ -29,7 +29,7 @@
         }
     });
 
-    tabela.cells().nodes().to$().find('.delete-button').on('click', function (e) {
+   tabela.cells().nodes().to$().find('.delete-button').on('click', function (e) {
     //$('.delete-button').on('click', function (e) {
         e.preventDefault();
 
@@ -44,26 +44,4 @@
         $('.alert').hide('hide');
     });
 
-});
-
-$(document).ready(function () {
-    $('#selectCidade').select2({
-        ajax: {
-            url: '/Cidades/PesquisarCidades',
-            dataType: 'json',
-            delay: 250,
-            data: function (params) {
-                return {
-                    term: params.term,
-                };
-            },
-            processResults: function (data) {
-                return {
-                    results: data,
-                };
-            },
-            cache: true
-        },
-        minimumInputLength: 1
-    });
 });

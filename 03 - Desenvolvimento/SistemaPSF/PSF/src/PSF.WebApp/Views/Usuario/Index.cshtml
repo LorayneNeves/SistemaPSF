@@ -52,6 +52,10 @@
                 <th class="br-item" role="listitem"><b>Email</b></th>
                 <th class="br-item" role="listitem"><b>Status</b></th>
                 <th class="br-item" role="listitem"><b>Perfil</b></th>
+                <th class="br-item" role="listitem"><b>Rua</b></th>
+                <th class="br-item" role="listitem"><b>Numero</b></th>
+                <th class="br-item" role="listitem"><b>Bairro</b></th>
+                <th class="br-item" role="listitem"><b>ESF</b></th>
                 <th class="br-item" role="listitem"><b>Ações</b></th>
 
                 <span class="br-divider"></span>
@@ -84,6 +88,10 @@
                         @(
                         item.Perfil == PSF.Dominio.Entities.UsuarioTipo.Admin ? "Admin" : "Padrão")
                     </td>
+                    <td class="br-item" role="listitem">@item.Esf.Enderecos.Rua</td>
+                    <td class="br-item" role="listitem">@item.Esf.Enderecos.Numero</td>
+                    <td class="br-item" role="listitem">@item.Esf.Enderecos.Bairro</td>
+                    <td class="br-item" role="listitem">@item.EsfId - @item.Esf.Nome</td>
                     <td class="br-item" role="listitem">
                         
                         <div class="btn-group" role="group" aria-label="Basic mixed styles example">
@@ -120,26 +128,7 @@
         </div>
     </div>
 </div>
-<!--
-<span class="br-divider"></span>
-<nav class="br-pagination" aria-label="Paginação de resultados" data-total="4" data-current="1">
-    <ul>
-        <li>
-            <button class="br-button circle" type="button" data-previous-page="data-previous-page" aria-label="Página anterior">
-                <i class="fas fa-angle-left" aria-hidden="true"></i>
-            </button>
-        </li>
-        <li><a class="page active" href="javascript:void(0)">1</a></li>
-        <li><a class="page" href="javascript:void(0)">2</a></li>
-        <li><a class="page" href="javascript:void(0)">3</a></li>
-        <li><a class="page" href="javascript:void(0)">4</a></li>
-        <li>
-            <button class="br-button circle" type="button" data-next-page="data-next-page" aria-label="Página seguinte">
-                <i class="fas fa-angle-right" aria-hidden="true"></i>
-            </button>
-        </li>
-    </ul>
-</nav>-->
+
 <script src="~/js/site.js"></script>
 
 

@@ -35,12 +35,18 @@ namespace PSF.WebApp.Controllers
         [HttpPost]
         public IActionResult InserirConfirmar(ESF end)
         {
+             db.Esf.Add(end);
+             db.SaveChanges();
 
-                    db.Esf.Add(end);
-                    db.SaveChanges();
+             return RedirectToAction("Index");
+        }
+        public IActionResult Excluir(int esfId)
+        {
+            var objeto = db.Esf.FirstOrDefault(f => f.EsfId == esfId);
 
-                    return RedirectToAction("Index");
-
+            db.Esf.Remove(objeto);
+            db.SaveChanges();
+            return RedirectToAction("Index");
         }
     }
 }

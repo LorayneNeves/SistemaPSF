@@ -26,17 +26,20 @@ namespace PSF.Dados.EntityFramework.Configurations
                  .Property(f => f.Nome)
                  .HasColumnName("Nome")
                  .HasColumnType("varchar(100)");
+            builder
+                 .Property(f => f.Status)
+                 .HasColumnName("Status")
+                 .HasColumnType("bit");
 
             builder
              .Property(f => f.EnderecoId)
-             .HasColumnName("EnderecoId") // Nome da coluna na tabela "Cidades" que será a FK
+             .HasColumnName("EnderecoId") 
              .HasColumnType("int");
 
-            // Define a relação de chave estrangeira com a tabela "Estados"
             builder
-                .HasOne(c => c.Enderecos) // Propriedade de navegação para "Estados"
-                .WithMany() // Indique a multiplicidade conforme necessário
-                .HasForeignKey(c => c.EnderecoId); // Indique a propriedade que é a FK
+                .HasOne(c => c.Enderecos)
+                .WithMany() 
+                .HasForeignKey(c => c.EnderecoId); 
         }
     
     }

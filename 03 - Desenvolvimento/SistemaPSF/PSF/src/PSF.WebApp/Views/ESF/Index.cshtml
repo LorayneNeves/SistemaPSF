@@ -26,16 +26,16 @@
 
                 </div>
                 <br />
-                <th class="br-item" role="listitem"><b>Nome do ESF</b></th>
-                <th class="br-item" role="listitem"><b>Código ESF</b></th>
-                <th class="br-item" role="listitem"><b>Código Endereco</b></th>
+                <th class="br-item" role="listitem"><b> ESF</b></th>
 
-                <th class="br-item" role="listitem"><b>Rua</b></th>
-                <th class="br-item" role="listitem"><b>Numero</b></th>
+                <th class="br-item" role="listitem"><b>Endereços</b></th>
+                <th class="br-item" role="listitem"><b>Nro </b></th>
                 <th class="br-item" role="listitem"><b>CEP</b></th>
                 <th class="br-item" role="listitem"><b>Bairro</b></th>
                 <th class="br-item" role="listitem"><b>Estado</b></th>
                 <th class="br-item" role="listitem"><b>Cidade</b></th>
+                <th class="br-item" role="listitem"><b>Status</b></th>
+                <th class="br-item" role="listitem"><b>Ações</b></th>
 
                 <span class="br-divider"></span>
             </tr>
@@ -45,9 +45,7 @@
             @foreach (var item in Model)
             {
                 <tr tr class="br-list horizontal">
-                    <td class="br-item" role="listitem">@item.Nome</td>
-                    <td class="br-item" role="listitem">@item.EsfId</td>
-                    <td class="br-item" role="listitem">@item.Enderecos.EnderecoId</td>
+                    <td class="br-item" role="listitem">@item.EsfId - @item.Nome</td>
                     <td class="br-item" role="listitem">@item.Enderecos.Rua</td>
 
                     <td class="br-item" role="listitem">@item.Enderecos.Numero </td>
@@ -57,12 +55,49 @@
                     <td class="br-item" role="listitem"> @item.Enderecos.Bairro</td>
                     <td class="br-item" role="listitem"> @item.Enderecos.Estado.Nome</td>
                     <td class="br-item" role="listitem"> @item.Enderecos.Cidade.Nome</td>
+                    <td class="br-item" role="listitem">
+                        @if (item.Status)
+                        {
+                            <span class="text-success">Ativo</span>
+                        }
+                        else
+                        {
+                            <span class="text-danger">Inativo</span>
+                        }
+                    </td>
                     
+                    <td class="br-item" role="listitem">
+                    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <a class="btn btn-danger btn-xs delete-button" asp-action="Excluir" asp-controller="Esf" asp-route-esfId="@item.EsfId"><i class="fa fa-trash" aria-hidden="false"></i></a>
+                        <br>
 
-                    
-                   
+                        <a asp-action="Inserir" asp-controller="Esf" asp-route-usuarioId="@item.EsfId"
+                           class="btn btn-secondary">Editar</a>
 
+                    </div>
+                    </td>
                 </tr>
             }
         </tbody>
     </table>
+
+    <div class="modal fade" id="confirm-delete-modal" tabindex="-1" role="dialog" aria-labelledby="confirm-delete-modal-label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirm-delete-modal-label">Confirmar Exclusão</h5>
+                    <a asp-action="Index" asp-controller="Esf" class="btn-close" aria-label="Close"></a>
+                </div>
+
+                <div class="modal-body">
+                    Tem certeza de que deseja excluir este usuário?
+                </div>
+                <div class="modal-footer">
+                    <a asp-action="Index" asp-controller="Esf-" class="btn btn-secondary" data-dismiss="modal">Cancelar</a>
+                    <a class="btn btn-danger" id="confirm-delete-button" href="#">Excluir</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

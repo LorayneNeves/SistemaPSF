@@ -67,20 +67,22 @@
 </form>
 
 @section Scripts {
+
     <script>
         $("#Estado").on("change", function () {
             const estadoId = $(this).val();
 
             $.ajax({
-                url: '/Cidade/GetCidades', 
+                url: '@Url.Action("GetCidades", "Cidade")',  // Certifique-se de que está gerando a URL correta
                 type: 'GET',
+                dataType: 'json',  // Indicando que estamos esperando dados JSON
+                contentType: 'application/json; charset=utf-8',  // Indicando o tipo de conteúdo enviado
                 data: { estadoId: estadoId },
                 success: function (cidades) {
-
                     $("#Cidade").empty();
 
                     $.each(cidades, function (index, cidade) {
-                        $("#Cidade").append('<option value="' + cidade.Id + '">' + cidade.Nome + '</option>');
+                        $("#Cidade").append('<option value="' + cidade.cidadeId + '">' + cidade.nome + '</option>');
                     });
                 },
                 error: function (error) {
@@ -88,5 +90,8 @@
                 }
             });
         });
+
+
     </script>
+
 }

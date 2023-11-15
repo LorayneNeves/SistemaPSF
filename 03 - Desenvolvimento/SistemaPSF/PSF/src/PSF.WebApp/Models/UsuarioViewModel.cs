@@ -7,6 +7,7 @@ namespace PSF.WebApp.Models
 {
     public class UsuarioViewModel
     {
+
         [Required(ErrorMessage = "Digite seu CPF")]
         public string CPF { get; set; }
         [Required(ErrorMessage = "Digite a senha")]

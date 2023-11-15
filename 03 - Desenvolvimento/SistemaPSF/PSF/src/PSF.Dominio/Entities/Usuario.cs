@@ -21,7 +21,7 @@ namespace PSF.Dominio.Entities
         [Required(ErrorMessage = "Digite o e-mail o usuário")]
         [EmailAddress(ErrorMessage ="O e-mail informado não é valido")]
         public string Email { get; set; }
-        [Required(ErrorMessage = "Digite a senha")]
+
         public string Senha { get; set; }
         public bool Status { get; set; }
 

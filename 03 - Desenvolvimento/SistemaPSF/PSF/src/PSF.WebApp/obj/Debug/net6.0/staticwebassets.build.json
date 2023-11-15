@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bNkh5y651PSBXIxRFDJVRxBGdClARnotJ4y4Muiy6ZU=",
+  "Hash": "jcWS9IuuYSReGV/higfCMFSCgKYHHi7CG4GUND6aX/k=",
   "Source": "PSF.WebApp",
   "BasePath": "_content/PSF.WebApp",
   "Mode": "Default",
@@ -136,23 +136,6 @@
       "OriginalItemSpec": "wwwroot\\images\\anatomy.png"
     },
     {
-      "Identity": "C:\\Users\\loray\\OneDrive\\Área de Trabalho\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.WebApp\\wwwroot\\images\\conta_govbr_v2.jpg",
-      "SourceId": "PSF.WebApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\loray\\OneDrive\\Área de Trabalho\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.WebApp\\wwwroot\\",
-      "BasePath": "_content/PSF.WebApp",
-      "RelativePath": "images/conta_govbr_v2.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\conta_govbr_v2.jpg"
-    },
-    {
       "Identity": "C:\\Users\\loray\\OneDrive\\Área de Trabalho\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.WebApp\\wwwroot\\images\\download-page.png",
       "SourceId": "PSF.WebApp",
       "SourceType": "Discovered",
@@ -168,6 +151,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\download-page.png"
+    },
+    {
+      "Identity": "C:\\Users\\loray\\OneDrive\\Área de Trabalho\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.WebApp\\wwwroot\\images\\Esf_Logo.jpg",
+      "SourceId": "PSF.WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\loray\\OneDrive\\Área de Trabalho\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.WebApp\\wwwroot\\",
+      "BasePath": "_content/PSF.WebApp",
+      "RelativePath": "images/Esf_Logo.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Esf_Logo.jpg"
     },
     {
       "Identity": "C:\\Users\\loray\\OneDrive\\Área de Trabalho\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.WebApp\\wwwroot\\images\\govbr.png",

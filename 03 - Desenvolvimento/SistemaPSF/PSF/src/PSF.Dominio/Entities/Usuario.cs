@@ -23,6 +23,7 @@ namespace PSF.Dominio.Entities
         public string Email { get; set; }
 
         public string Senha { get; set; }
+        [Required(ErrorMessage = "Informe o status do usuário")]
         public bool Status { get; set; }
 
         [Required(ErrorMessage = "Informe o perfil do usuário")]

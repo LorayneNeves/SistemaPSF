@@ -16,6 +16,25 @@
 
 @model IEnumerable<ESF>
 <div >
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a class="btn btn-primary" role="button" asp-action="Inserir" asp-controller="Esf">Adicionar novo endereço de Esf</a>
+    </div>
+    <br />
+
+    @if (TempData["MensagemSucesso"] != null)
+    {
+        <div class="alert alert-success" role="alert">
+            <button type="button" class="btn btn-danger btn-sm close-alert" aria-label="Close">X</button>
+            @Html.Raw(TempData["MensagemSucesso"])
+        </div>
+    }
+    @if (TempData["MensagemErro"] != null)
+    {
+        <div class="alert alert-danger" role="alert">
+            <button type="button" class="btn btn-danger btn-sm close-alert" aria-label="Close">X</button>
+            @Html.Raw(TempData["MensagemErro"])
+        </div>
+    }
     <table class="table table-striped table-sm" id="table-usuarios">
         <thead class="br-list horizontal" role="list" color="blue">
             <tr class="header">

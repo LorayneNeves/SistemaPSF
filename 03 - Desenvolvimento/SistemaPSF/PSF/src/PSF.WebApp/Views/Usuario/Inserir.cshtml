@@ -76,13 +76,14 @@
                 <option value="@UsuarioTipo.Padrao">Padrão</option>
             </select>
         @Html.ValidationMessageFor(x => x.Perfil)
-         </div>
+    </div>
     <div class="grid text-center">
         <select asp-for="Status" class="form-select form-select-sm" aria-label="Small select example">
             <option selected>Status do usuário</option>
             <option value="true">Ativar</option>
             <option value="false">Desativar</option>
         </select>
+        @Html.ValidationMessageFor(x => x.Status)
     </div>
 
     <div class="col-md-4">

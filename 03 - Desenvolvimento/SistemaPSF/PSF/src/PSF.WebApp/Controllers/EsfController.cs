@@ -33,12 +33,24 @@ namespace PSF.WebApp.Controllers
         }
 
         [HttpPost]
-        public IActionResult InserirConfirmar(ESF end)
+        public IActionResult InserirConfirmar(ESF endereco)
         {
-             db.Esf.Add(end);
-             db.SaveChanges();
-
-             return RedirectToAction("Index");
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    db.Esf.Add(endereco);
+                    db.SaveChanges();
+                    TempData["MensagemSucesso"] = "ESF cadastrado com sucesso";
+                    return RedirectToAction("Index");
+                }
+                return View(endereco);
+            }
+            catch (System.Exception erro)
+            {
+                TempData["MensagemErro"] = $"Ops! Não conseguimos cadastrar o ESF, tente novamente. <br /> Detalhe do erro: {erro.Message}";
+                return RedirectToAction("Index");
+            }
         }
         public IActionResult Excluir(int esfId)
         {

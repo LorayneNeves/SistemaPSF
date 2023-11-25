@@ -11,6 +11,7 @@ namespace PSF.Dominio.Entities
     {
         [Key]
         public int CidadeId { get; set; }
+        [Required(ErrorMessage = "Informe a Cidade")]
         public string Nome { get; set; }
         public int EstadoId { get; set; }
         public Estados Estado { get; set; }

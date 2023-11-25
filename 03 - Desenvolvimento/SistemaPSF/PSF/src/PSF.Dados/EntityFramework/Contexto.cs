@@ -17,6 +17,7 @@ namespace PSF.Dados.EntityFramework
         public DbSet<Estados> Estados { get; set; }
         public DbSet<Cidades> Cidades { get; set; }       
         public DbSet<ESF> Esf { get; set; }
+        public DbSet<Indicador> Indicador { get; set; }
         public Contexto() : base()
         {
 
@@ -37,6 +38,7 @@ namespace PSF.Dados.EntityFramework
             modelBuilder.ApplyConfiguration(new EstadoConfiguration());
             modelBuilder.ApplyConfiguration(new EsfConfiguration());
             modelBuilder.ApplyConfiguration(new EnderecoConfiguration());
+            modelBuilder.ApplyConfiguration(new IndicadorConfiguration());
         }
     }
 }

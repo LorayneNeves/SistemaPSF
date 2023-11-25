@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PSF.Dominio.ValueObjects
 {
-    public enum IndicadorTipoEnum
+    public enum IndicadorTipo
     {
         Nenhum = 0,
         COVID = 1,

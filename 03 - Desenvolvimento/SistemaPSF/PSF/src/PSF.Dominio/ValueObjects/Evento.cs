@@ -9,8 +9,10 @@ namespace PSF.Dominio.ValueObjects
 {
     public class Evento
     {
-        public Indicador indicador { get; set; }
-        public DateTime data { get; set; }
-        public int valor { get; set; }
+        public int EventoId { get; set; }
+        public Indicador Indicador { get; set; }
+        public int IndicadorId { get; set; }
+        public DateTime Data { get; set; }
+        public int Valor { get; set; }
     }
 }

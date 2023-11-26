@@ -20,7 +20,6 @@ namespace PSF.WebApp.Controllers
         {
             var indicadores = new Indicador();
             return View(indicadores);
-
         }
 
         [HttpPost]
@@ -43,5 +42,6 @@ namespace PSF.WebApp.Controllers
                 return RedirectToAction("Index");
             }
         }
+        
     }
 }

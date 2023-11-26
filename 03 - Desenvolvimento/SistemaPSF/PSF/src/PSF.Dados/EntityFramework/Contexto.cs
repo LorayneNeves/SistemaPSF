@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PSF.Dados.EntityFramework.Configurations;
 using PSF.Dominio.Entities;
+using PSF.Dominio.ValueObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +19,7 @@ namespace PSF.Dados.EntityFramework
         public DbSet<Cidades> Cidades { get; set; }       
         public DbSet<ESF> Esf { get; set; }
         public DbSet<Indicador> Indicador { get; set; }
+        public DbSet<Evento> Evento { get; set; }
         public Contexto() : base()
         {
 
@@ -39,6 +41,7 @@ namespace PSF.Dados.EntityFramework
             modelBuilder.ApplyConfiguration(new EsfConfiguration());
             modelBuilder.ApplyConfiguration(new EnderecoConfiguration());
             modelBuilder.ApplyConfiguration(new IndicadorConfiguration());
+            modelBuilder.ApplyConfiguration(new EventoConfiguration());
         }
     }
 }

@@ -4,11 +4,8 @@ namespace PSF.WebApp.Helper
 {
 	public interface ISessao
 	{
-		//void CriarSessaoDoUsuario(UsuarioViewModel usuarioViewModel);
-		/// <summary>
-		/// void RemoverSessaoUsuario();
-		/// </summary>
-		/// <returns></returns>
-		//UsuarioViewModel BuscarSessaoDoUsuario();
+		public void CriarSessaoDoUsuario(UsuarioViewModel usuarioViewModel);
+		public void RemoverSessaoUsuario();
+		UsuarioViewModel BuscarSessaoDoUsuario();
 	}
 }

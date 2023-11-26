@@ -158,11 +158,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\loray\\OneDrive\\Área de Trabalho\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj",
+      "projectUniqueName": "C:\\Users\\loray\\OneDrive\\Imagens\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj",
       "projectName": "PSF.Dominio",
-      "projectPath": "C:\\Users\\loray\\OneDrive\\Área de Trabalho\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj",
+      "projectPath": "C:\\Users\\loray\\OneDrive\\Imagens\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj",
       "packagesPath": "C:\\Users\\loray\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\loray\\OneDrive\\Área de Trabalho\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\obj\\",
+      "outputPath": "C:\\Users\\loray\\OneDrive\\Imagens\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\loray\\AppData\\Roaming\\NuGet\\NuGet.Config",

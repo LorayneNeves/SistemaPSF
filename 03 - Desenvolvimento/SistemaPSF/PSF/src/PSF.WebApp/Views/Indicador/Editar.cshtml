@@ -1,0 +1,42 @@
+﻿@using PSF.Dominio.Entities;
+
+@model EditarIndicadorViewModel;
+
+<form asp-action="EditarConfirmar" asp-controller="Indicador" method="POST" class="row g-3 needs-validation">
+
+    <input asp-for="IndicadorId" type="hidden" />
+    <div class="form-floating mb-3">
+        <textarea asp-for="Titulo" class="form-control" placeholder="Descrição do indicador aqui" id="validationCustom01" style="height: 100px" required></textarea>
+        <label for="validationCustom01" class="form-label">Descrição do Indicador</label>
+        @Html.ValidationMessageFor(x => x.Titulo)
+        <div class="invalid-feedback">
+            Please choose a username.
+        </div>
+    </div>
+
+    <div class="grid text-center">
+        <select asp-for="IndicadorTipo" class="form-select form-select-sm" aria-label="Small select example">
+            <option selected>Selecione o tipo de perfil do usuário</option>
+            <option value="@PSF.Dominio.ValueObjects.IndicadorTipo.Nenhum">Nenhum</option>
+            <option value="@PSF.Dominio.ValueObjects.IndicadorTipo.COVID">COVID</option>
+            <option value="@PSF.Dominio.ValueObjects.IndicadorTipo.PlanilhaChecagem">Planilha Checagem</option>
+            <option value="@PSF.Dominio.ValueObjects.IndicadorTipo.Medicacao">Medicação</option>
+            <option value="@PSF.Dominio.ValueObjects.IndicadorTipo.Vacinacao">Vacinação</option>
+            <option value="@PSF.Dominio.ValueObjects.IndicadorTipo.Outro">Outro</option>
+        </select>
+    </div>
+
+    <div class="grid text-center">
+        <select asp-for="Status" class="form-select form-select-sm" aria-label="Small select example">
+            <option selected>Status do indicador</option>
+            <option value="true">Ativar</option>
+            <option value="false">Desativar</option>
+        </select>
+    </div>
+
+    <div class="col-12">
+        <button class="btn btn-primary" type="submit">Confirmar Cadastro</button>
+        <a class="btn btn-secondary btn-block" asp-controller="Indicador" asp-action="Index" role="button">Voltar</a>
+    </div>
+
+</form>

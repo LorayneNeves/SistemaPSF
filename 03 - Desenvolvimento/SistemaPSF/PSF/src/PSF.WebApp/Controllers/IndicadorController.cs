@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PSF.Dados.EntityFramework;
 using PSF.Dominio.Entities;
+using PSF.WebApp.Models;
 
 namespace PSF.WebApp.Controllers
 {
@@ -42,6 +43,54 @@ namespace PSF.WebApp.Controllers
                 return RedirectToAction("Index");
             }
         }
-        
+        public IActionResult Editar(int indicadorId)
+        {
+            var indicador = db.Indicador.FirstOrDefault(u => u.IndicadorId == indicadorId);
+            if (indicador == null)
+            {
+                return NotFound();
+            }
+
+            var indicadorViewModel = new EditarIndicadorViewModel
+            {
+                IndicadorId = indicador.IndicadorId,
+                Titulo = indicador.Titulo,
+                IndicadorTipo = indicador.IndicadorTipo
+            };
+
+            return View(indicadorViewModel);
+        }
+        [HttpPost]
+        public IActionResult EditarConfirmar(EditarIndicadorViewModel indicadorModel)
+        {
+            try
+            {
+                var indicadorExistente = db.Indicador.FirstOrDefault(u => u.IndicadorId == indicadorModel.IndicadorId);
+
+                if (indicadorExistente != null)
+                {
+                    indicadorExistente.Titulo = indicadorModel.Titulo;
+                    indicadorExistente.IndicadorTipo = indicadorModel.IndicadorTipo;
+                    indicadorExistente.Status = indicadorModel.Status;
+
+                    db.Entry(indicadorExistente).Property(x => x.IndicadorId).IsModified = false;
+                    db.SaveChanges();
+
+                    TempData["MensagemSucesso"] = "Indicador atualizado com sucesso";
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    TempData["MensagemErro"] = "Indicador não encontrado";
+                    return RedirectToAction("Index");
+                }
+            }
+            catch (Exception erro)
+            {
+                TempData["MensagemErro"] = $"Ops! Não conseguimos atualizar o indicador, tente novamente. Detalhe do erro: {erro.Message}";
+                return RedirectToAction("Index");
+            }
+        }
+
     }
 }

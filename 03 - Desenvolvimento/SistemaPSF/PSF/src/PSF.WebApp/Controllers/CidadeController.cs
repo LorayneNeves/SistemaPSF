@@ -2,9 +2,11 @@
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using PSF.Dados.EntityFramework;
 using PSF.Dominio.Entities;
+using PSF.WebApp.Filters;
 
 namespace PSF.WebApp.Controllers
 {
+    [PaginaUsuarioLogado]
     public class CidadeController : Controller
     {
         public Contexto db = new Contexto();

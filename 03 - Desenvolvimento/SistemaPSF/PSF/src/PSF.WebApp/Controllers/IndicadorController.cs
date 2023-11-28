@@ -1,10 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PSF.Dados.EntityFramework;
 using PSF.Dominio.Entities;
+using PSF.WebApp.Filters;
 using PSF.WebApp.Models;
 
 namespace PSF.WebApp.Controllers
 {
+    [PaginaUsuarioLogado]
     public class IndicadorController : Controller
     {
         private Contexto db = new Contexto();

@@ -4,10 +4,12 @@ using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using PSF.Dados.EntityFramework;
 using PSF.Dominio.Entities;
+using PSF.WebApp.Filters;
 using PSF.WebApp.Models;
 
 namespace PSF.WebApp.Controllers
 {
+    [PaginaRestritaAdmin]
     public class UsuarioController : Controller
     {
         private Contexto db = new Contexto();

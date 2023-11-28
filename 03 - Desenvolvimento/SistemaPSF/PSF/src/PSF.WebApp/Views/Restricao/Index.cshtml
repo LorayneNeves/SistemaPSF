@@ -1,0 +1,17 @@
+﻿@{
+    Layout = "_LayoutDeslogado";
+    ViewData["Title"] = "Restrito";
+}
+<div class="card text-center">
+    <div class="card-header">
+        Restrição
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">Você não tem permissão para acessar essa página</h5>
+        <p class="card-text">Clique no botão abaixo para voltar para página principal</p>
+        <a asp-controller ="Home" asp-action="Index" class="btn btn-primary">Clique aqui</a>
+    </div>
+    <div class="card-footer text-body-secondary">
+        <p class="alert alert-danger">=(</p>
+    </div>
+</div>

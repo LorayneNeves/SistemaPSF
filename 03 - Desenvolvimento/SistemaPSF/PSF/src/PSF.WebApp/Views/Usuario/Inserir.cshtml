@@ -1,5 +1,4 @@
 ﻿@using PSF.Dominio.Entities;
-@using PSF.Dominio.ValueObjects;
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -74,8 +73,7 @@
                 <option selected>Selecione o perfil do usuário</option>
                 <option value="@UsuarioTipo.Admin">Administrador</option>
                 <option value="@UsuarioTipo.Padrao">Padrão</option>
-            </select>
-        @Html.ValidationMessageFor(x => x.Perfil)
+            </select>       
     </div>
     <div class="grid text-center">
         <select asp-for="Status" class="form-select form-select-sm" aria-label="Small select example">

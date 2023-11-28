@@ -26,7 +26,7 @@ namespace PSF.Dados.EntityFramework
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data source = BANDEIRA,1434; 
+            optionsBuilder.UseSqlServer(@"Data source = 201.62.57.93,1434; 
                                     Database = BD044860; 
                                     User ID = RA044860; 
                                     Password = 044860;

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\044860\\Pictures\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\PSF.Dados.csproj": {}
+    "C:\\Users\\loray\\Downloads\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\PSF.Dados.csproj": {}
   },
   "projects": {
-    "C:\\Users\\044860\\Pictures\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\PSF.Dados.csproj": {
+    "C:\\Users\\loray\\Downloads\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\PSF.Dados.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\044860\\Pictures\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\PSF.Dados.csproj",
+        "projectUniqueName": "C:\\Users\\loray\\Downloads\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\PSF.Dados.csproj",
         "projectName": "PSF.Dados",
-        "projectPath": "C:\\Users\\044860\\Pictures\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\PSF.Dados.csproj",
-        "packagesPath": "C:\\Users\\044860\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\044860\\Pictures\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\obj\\",
+        "projectPath": "C:\\Users\\loray\\Downloads\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\PSF.Dados.csproj",
+        "packagesPath": "C:\\Users\\loray\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\loray\\Downloads\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dados\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\044860\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\loray\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\044860\\Pictures\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj": {
-                "projectPath": "C:\\Users\\044860\\Pictures\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj"
+              "C:\\Users\\loray\\Downloads\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj": {
+                "projectPath": "C:\\Users\\loray\\Downloads\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj"
               }
             }
           }
@@ -69,21 +69,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\044860\\Pictures\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj": {
+    "C:\\Users\\loray\\Downloads\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\044860\\Pictures\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\loray\\Downloads\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj",
         "projectName": "PSF.Dominio",
-        "projectPath": "C:\\Users\\044860\\Pictures\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj",
-        "packagesPath": "C:\\Users\\044860\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\044860\\Pictures\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\obj\\",
+        "projectPath": "C:\\Users\\loray\\Downloads\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj",
+        "packagesPath": "C:\\Users\\loray\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\loray\\Downloads\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\044860\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\loray\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -130,7 +130,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

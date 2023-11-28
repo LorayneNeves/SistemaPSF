@@ -1,10 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
+using PSF.WebApp.Filters;
 using PSF.WebApp.Models;
 using System.Diagnostics;
 
 namespace PSF.WebApp.Controllers
 {
+    [PaginaUsuarioLogado]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

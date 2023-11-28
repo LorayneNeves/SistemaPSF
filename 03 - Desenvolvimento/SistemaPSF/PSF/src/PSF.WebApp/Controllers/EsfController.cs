@@ -3,9 +3,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using PSF.Dados.EntityFramework;
 using PSF.Dominio.Entities;
+using PSF.WebApp.Filters;
 
 namespace PSF.WebApp.Controllers
 {
+    [PaginaUsuarioLogado]
     public class EsfController : Controller
     {
         private Contexto db = new Contexto();

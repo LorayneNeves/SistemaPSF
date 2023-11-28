@@ -32,7 +32,6 @@ namespace PSF.WebApp.Controllers
         [HttpPost]
         public IActionResult Autenticar(UsuarioViewModel usuario)
         {
-
             try
             {
                 if (ModelState.IsValid)

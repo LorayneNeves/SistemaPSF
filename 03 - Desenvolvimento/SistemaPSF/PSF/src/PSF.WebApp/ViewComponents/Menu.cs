@@ -11,10 +11,12 @@ namespace PSF.WebApp.ViewComponents
         {
             string sessaoUsuario = HttpContext.Session.GetString("sessaoUsuarioLogado");
 
-            if (string.IsNullOrEmpty(sessaoUsuario)) return null;
-            UsuarioViewModel usuario = JsonConvert.DeserializeObject<UsuarioViewModel>(sessaoUsuario);
+            var usuarioViewModel = new UsuarioViewModel();
 
-            return View(usuario);
+            if (!string.IsNullOrEmpty(sessaoUsuario)) 
+                usuarioViewModel = JsonConvert.DeserializeObject<UsuarioViewModel>(sessaoUsuario);
+
+            return View(usuarioViewModel);
         }
     }
 }

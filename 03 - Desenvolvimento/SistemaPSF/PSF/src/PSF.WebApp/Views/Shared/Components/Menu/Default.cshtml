@@ -1,5 +1,5 @@
-﻿
-@model UsuarioViewModel
+﻿@model UsuarioViewModel
+
 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
     <img src="~/images/Esf_Logo.jpg" height="50px" />
 </a>
@@ -13,7 +13,7 @@
             <a class="nav-link text-dark" asp-area="" asp-controller="Esf" asp-action="Index">ESF</a>
         </li>
 
-        @if (Model.Perfil == PSF.Dominio.Entities.UsuarioTipo.Padrao)
+        @if (Model.Perfil == PSF.Dominio.Entities.UsuarioTipo.Admin)
         {
             <li class="nav-item">
                 <a class="nav-link text-dark" asp-area="" asp-controller="Usuario" asp-action="Index">Usuários</a>

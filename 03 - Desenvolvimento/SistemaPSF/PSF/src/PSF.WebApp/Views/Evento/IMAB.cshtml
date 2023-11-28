@@ -6,7 +6,7 @@
             <div class="d-grid gap-2 d-md-block">
                 <h2 class="text-center">Selecione o Mês e Ano</h2>
 
-                <form id="eventoForm" asp-action="SeuMetodoNoController" method="post">
+                <form id="eventoForm" asp-action="IMAB" method="post">
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="selectMes">Mês</label>
@@ -33,10 +33,7 @@
                                 <option value="2024">2024</option>
                             </select>
                         </div>
-                    </div>
-
-                    
-   
+                    </div>                   
     <br />
     <table class="table table-striped table-sm" id="table-usuarios">
         <thead class="br-list horizontal" role="list" color="blue">
@@ -59,7 +56,6 @@
                 <tr tr class="br-list horizontal">
                     <td class="br-item" role="listitem">@item.Indicador.Titulo</td>
                     <td class="br-item" role="listitem">@item.Indicador.IndicadorTipo</td>
-
                     
                 </tr>
             }

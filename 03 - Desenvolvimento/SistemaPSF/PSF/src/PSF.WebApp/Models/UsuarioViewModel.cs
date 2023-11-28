@@ -21,14 +21,14 @@ namespace PSF.WebApp.Models
             {
                 // Consulta o banco de dados para encontrar o usuário com o CPF fornecido
                 var usuarioNoBanco = context.Usuario.FirstOrDefault(u => u.CPF == CPF);
-                UsuarioTipo tipoPerfil;
                 // Verifica se o usuário foi encontrado
                 if (usuarioNoBanco != null)
                 {
                     // Compara a senha fornecida com a senha armazenada no banco de dados
                     if (usuarioNoBanco.Senha == Senha)
                     {
-                        tipoPerfil = usuarioNoBanco.Perfil;
+                        Perfil = usuarioNoBanco.Perfil;
+
                         return true; // Autenticação bem-sucedida
                     }
                 }

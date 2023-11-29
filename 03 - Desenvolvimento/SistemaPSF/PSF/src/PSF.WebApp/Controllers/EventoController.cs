@@ -2,6 +2,7 @@
 using PSF.Dados.EntityFramework;
 using PSF.Dominio.ValueObjects;
 using PSF.WebApp.Filters;
+using PSF.WebApp.Models;
 
 namespace PSF.WebApp.Controllers
 {
@@ -12,10 +13,17 @@ namespace PSF.WebApp.Controllers
 
         public IActionResult IMAB()
         {
-            var evento = db.Evento
-                .ToList();
+            var entidade = new IMAPViewModel {
+                Indicadores = db.Indicador.ToList()
+            };
 
-            return View(evento);
+            return View(entidade);
+        }
+
+        [HttpPost]
+        public IActionResult IMAB_Confirmar([FromBody]List<IMAPRespostaViewModel> entidade)
+        {
+            return null;
         }
     }
 }

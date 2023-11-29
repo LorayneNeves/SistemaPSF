@@ -1,5 +1,5 @@
 ﻿@using PSF.Dominio.ValueObjects;
-@model IEnumerable<Evento>
+@model IMAPViewModel
 <div>
     <div class="container mt-5">
         <div class="row">
@@ -27,7 +27,7 @@
                         </div>
                         <div class="form-group col-md-6">
                             <label for="selectAno">Ano</label>
-                            <select id="selectAno" class="form-control">
+                            <select asp-for="Ano" class="form-control">
                                 <option value="2022">2022</option>
                                 <option value="2023">2023</option>
                                 <option value="2024">2024</option>
@@ -35,34 +35,35 @@
                         </div>
                     </div>                   
     <br />
-    <table class="table table-striped table-sm" id="table-usuarios">
+    <table class="table table-sm" id="table-IMAP">
         <thead class="br-list horizontal" role="list" color="blue">
             <tr class="header">
                 <div class="title">
                     <h2>Listagem de Indicadores Cadastrados</h2>
                 </div>
                 <br />
-                <th class="br-item" role="listitem"><b>Indicadores</b></th>
                 <th class="br-item" role="listitem"><b>Tipo</b></th>
-                <th class="br-item" role="listitem"><b>Status</b></th>
+                <th class="br-item" role="listitem"><b>Indicadores</b></th>
                 <th class="br-item" role="listitem">
                     <b>Editar</b>
                     <span class="br-divider"></span>
             </tr>
         </thead>
         <tbody class="header">
-            @foreach (var item in Model)
+            @foreach (var item in Model.Indicadores)
             {
                 <tr tr class="br-list horizontal">
-                    <td class="br-item" role="listitem">@item.Indicador.Titulo</td>
-                    <td class="br-item" role="listitem">@item.Indicador.IndicadorTipo</td>
-                    
+                    <td class="br-item" role="listitem">@item.IndicadorTipo</td>
+                    <td class="br-item" role="listitem">@item.Titulo</td>
+                    <td>
+                        <input type="text" class="" inputmode="numeric" data-id="valor" data-indicador-id="@item.IndicadorId">
+                    </td>
                 </tr>
             }
         </tbody>
 
                     </table>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="button" id="button-IMAP-enviar" class="btn btn-primary">Enviar</button>
                 </form>
             </div>
         </div>
@@ -71,6 +72,35 @@
 @section Scripts 
 {
     <script>
+        $("#button-IMAP-enviar").on("click", function (){
+            var entidade = new Array();
+
+            $("#table-IMAP tbody tr").each(function () {
+                const $self = $(this);
+                const $input = $self.find("[data-id='valor']");
+
+                entidade.push({
+                    IndicadorId: $input.data("indicador-id"),
+                    Valor: $input.val()
+                });
+
+                fetch("/Evento/IMAB_Confirmar", {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(entidade)
+                })
+
+                //$.post("/Evento/IMAB_Confirmar", entidade);
+            });
+
+        });
+    </script>
+    
+
+    @*<script>
         $(document).ready(function () {
             // Quando o formulário é enviado
             $('#eventoForm').submit(function (e) {
@@ -97,6 +127,6 @@
                 // Faça o que for necessário com o objeto 'evento', como enviar para o servidor
             });
         });
-    </script>
+    </script>*@
 }
 

@@ -5,14 +5,27 @@
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
-
+    margin-bottom: 60px;
 }
+
+html body {
+    margin-bottom: 60px;
+    background-color: #fcfcfc
+}
+
+#table-usuarios {
+    font-size: 13px;
+}
+
+.dataTables_length {
+    font-size: 13px;
+}
+
 body {
     margin: 0;
     font-family: 'rawline', Rawline, serif;
@@ -22,24 +35,28 @@ body {
     color: #333333;
     background-color: #fff;
 }
+
 .nav-item {
     font-size: 18px;
 }
+
 .form-floating {
-margin-right: 20px;
+    margin-right: 20px;
 }
 
 footer {
     display: none;
 }
+
 .field-validation-error {
     color: #e01d1d;
 }
-.close-alert{
-    position:absolute;
+
+.close-alert {
+    position: absolute;
     right: -10px;
     top: -15px;
     border-radius: 15px;
-    width:30px;
-    height:31px;
+    width: 30px;
+    height: 31px;
 }

@@ -9,89 +9,89 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PSF.WebApp
 build_property.RootNamespace = PSF.WebApp
-build_property.ProjectDir = C:\Users\044860\Documents\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\
+build_property.ProjectDir = C:\Users\loray\OneDrive\Área de Trabalho\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\044860\Documents\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp
+build_property.MSBuildProjectDirectory = C:\Users\loray\OneDrive\Área de Trabalho\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/044860/Documents/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/Autenticacao/Index.cshtml]
+[C:/Users/loray/OneDrive/Área de Trabalho/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/Autenticacao/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0ZW50aWNhY2FvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/044860/Documents/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/ESF/Index.cshtml]
+[C:/Users/loray/OneDrive/Área de Trabalho/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/ESF/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRVNGXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/044860/Documents/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/ESF/Inserir.cshtml]
+[C:/Users/loray/OneDrive/Área de Trabalho/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/ESF/Inserir.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRVNGXEluc2VyaXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/044860/Documents/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/Evento/IMAB.cshtml]
+[C:/Users/loray/OneDrive/Área de Trabalho/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/Evento/IMAB.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRvXElNQUIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/044860/Documents/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/Home/Index.cshtml]
+[C:/Users/loray/OneDrive/Área de Trabalho/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/044860/Documents/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/Home/Privacy.cshtml]
+[C:/Users/loray/OneDrive/Área de Trabalho/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/044860/Documents/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/Indicador/Editar.cshtml]
+[C:/Users/loray/OneDrive/Área de Trabalho/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/Indicador/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5kaWNhZG9yXEVkaXRhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/044860/Documents/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/Indicador/Index.cshtml]
+[C:/Users/loray/OneDrive/Área de Trabalho/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/Indicador/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5kaWNhZG9yXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/044860/Documents/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/Indicador/Inserir.cshtml]
+[C:/Users/loray/OneDrive/Área de Trabalho/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/Indicador/Inserir.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5kaWNhZG9yXEluc2VyaXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/044860/Documents/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/Restricao/Index.cshtml]
+[C:/Users/loray/OneDrive/Área de Trabalho/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/Restricao/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdHJpY2FvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/044860/Documents/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/Shared/Components/Menu/Default.cshtml]
+[C:/Users/loray/OneDrive/Área de Trabalho/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/Shared/Components/Menu/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWVudVxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/044860/Documents/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/Shared/Error.cshtml]
+[C:/Users/loray/OneDrive/Área de Trabalho/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/044860/Documents/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/loray/OneDrive/Área de Trabalho/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/044860/Documents/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/Usuario/Editar.cshtml]
+[C:/Users/loray/OneDrive/Área de Trabalho/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/Usuario/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xFZGl0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/044860/Documents/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/Usuario/Index.cshtml]
+[C:/Users/loray/OneDrive/Área de Trabalho/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/Usuario/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/044860/Documents/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/Usuario/Inserir.cshtml]
+[C:/Users/loray/OneDrive/Área de Trabalho/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/Usuario/Inserir.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xJbnNlcmlyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/044860/Documents/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/_ViewImports.cshtml]
+[C:/Users/loray/OneDrive/Área de Trabalho/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/044860/Documents/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/_ViewStart.cshtml]
+[C:/Users/loray/OneDrive/Área de Trabalho/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/044860/Documents/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/Shared/_Layout.cshtml]
+[C:/Users/loray/OneDrive/Área de Trabalho/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-roeigxt06x
 
-[C:/Users/044860/Documents/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/Shared/_LayoutDeslogado.cshtml]
+[C:/Users/loray/OneDrive/Área de Trabalho/SistemaPSF/03 - Desenvolvimento/SistemaPSF/PSF/src/PSF.WebApp/Views/Shared/_LayoutDeslogado.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXREZXNsb2dhZG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-w4sufdnd92

@@ -13,15 +13,20 @@ body {
     margin-bottom: 60px;
 }
 
-body {
+html body {
     margin: 0;
-    font-family: 'rawline', Rawline, serif;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 500px;
     line-height: 1.5;
-    color: #333333;
-    background-color: #fff;
+    color: #205db1;
+    transition: 1s;
+    background-color: #deeaf5
 }
+
+.form-floating {
+    margin-right: 50px;
+}
+
 .esqueci-senha {
     margin-right: 30px;
 }
@@ -34,15 +39,21 @@ body {
     margin-top: 40px;
 }
 
+h3 {
+    color: #205db1;
+}
+
 .login {
     margin-top: 30px;
 }
+
 .container {
-    align-items:center;
+    align-items: center;
 }
+
 footer {
     margin-top: 20px;
-    font-size:12px;
+    font-size: 12px;
 }
 
 .field-validation-error {
@@ -50,6 +61,7 @@ footer {
 }
 
 .close-alert {
+    margin-top: 15px;
     position: absolute;
     right: -10px;
     top: -15px;

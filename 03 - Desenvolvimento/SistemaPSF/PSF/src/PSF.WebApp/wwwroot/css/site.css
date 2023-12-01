@@ -7,15 +7,13 @@
 html {
     position: relative;
     min-height: 100%;
+
 }
 
-body {
-    margin-bottom: 60px;
-}
 
 html body {
-    margin-bottom: 60px;
-    background-color: #fcfcfc
+   margin-bottom: 60px;
+   background-color: #f8f9fa;
 }
 
 #table-usuarios {
@@ -24,17 +22,9 @@ html body {
 
 .dataTables_length {
     font-size: 13px;
+    color: #0042a9
 }
 
-body {
-    margin: 0;
-    font-family: 'rawline', Rawline, serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #333333;
-    background-color: #fff;
-}
 
 .nav-item {
     font-size: 18px;

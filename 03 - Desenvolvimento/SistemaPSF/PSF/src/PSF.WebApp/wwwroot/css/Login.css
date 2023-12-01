@@ -24,13 +24,20 @@ html body {
 }
 
 .form-floating {
-    margin-right: 50px;
+    margin-right: 50px ;
 }
-
 .esqueci-senha {
-    margin-right: 30px;
+    margin-left: 5px;
+    margin-top: 100px;
+    font-size: 13px
 }
+.col{
 
+
+}
+.card-img-top {
+    padding-top: 70px;
+}
 .form-check {
     margin-top: 20px;
 }
@@ -41,6 +48,7 @@ html body {
 
 h3 {
     color: #205db1;
+    
 }
 
 .login {
@@ -59,7 +67,6 @@ footer {
 .field-validation-error {
     color: #e01d1d;
 }
-
 .close-alert {
     margin-top: 15px;
     position: absolute;

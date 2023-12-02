@@ -17,25 +17,21 @@ namespace PSF.WebApp.Models
         public bool Autenticado()
         {
 
-            using (var context = new Contexto()) // Substitua 'SeuDbContext' pelo contexto do seu banco de dados
+            using (var context = new Contexto())
             {
-                // Consulta o banco de dados para encontrar o usuário com o CPF fornecido
                 var usuarioNoBanco = context.Usuario.FirstOrDefault(u => u.CPF == CPF);
                 // Verifica se o usuário foi encontrado
                 if (usuarioNoBanco != null)
                 {
-                    // Compara a senha fornecida com a senha armazenada no banco de dados
                     if (usuarioNoBanco.Senha == Senha)
                     {
                         Perfil = usuarioNoBanco.Perfil;
 
-                        return true; // Autenticação bem-sucedida
+                        return true;
                     }
                 }
             }
-
             return false; 
-
         }
 	
 

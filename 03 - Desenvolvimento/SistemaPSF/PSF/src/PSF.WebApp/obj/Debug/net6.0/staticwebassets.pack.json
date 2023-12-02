@@ -9,10 +9,6 @@
       "PackagePath": "staticwebassets\\css\\Login.css"
     },
     {
-      "Id": "C:\\Users\\loray\\OneDrive\\Área de Trabalho\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.WebApp\\wwwroot\\css\\Usuarios.css",
-      "PackagePath": "staticwebassets\\css\\Usuarios.css"
-    },
-    {
       "Id": "C:\\Users\\loray\\OneDrive\\Área de Trabalho\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.WebApp\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -51,6 +47,10 @@
     {
       "Id": "C:\\Users\\loray\\OneDrive\\Área de Trabalho\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.WebApp\\wwwroot\\images\\ilustra-padrao.png",
       "PackagePath": "staticwebassets\\images\\ilustra-padrao.png"
+    },
+    {
+      "Id": "C:\\Users\\loray\\OneDrive\\Área de Trabalho\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.WebApp\\wwwroot\\images\\logo-ESF.jpg",
+      "PackagePath": "staticwebassets\\images\\logo-ESF.jpg"
     },
     {
       "Id": "C:\\Users\\loray\\OneDrive\\Área de Trabalho\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.WebApp\\wwwroot\\images\\type-model.png",

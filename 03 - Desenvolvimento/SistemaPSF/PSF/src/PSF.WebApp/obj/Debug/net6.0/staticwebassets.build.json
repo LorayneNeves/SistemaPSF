@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jcWS9IuuYSReGV/higfCMFSCgKYHHi7CG4GUND6aX/k=",
+  "Hash": "ABi9M6BixESYZJjgueqUPAXFJm5V51HKgmYBJbniww4=",
   "Source": "PSF.WebApp",
   "BasePath": "_content/PSF.WebApp",
   "Mode": "Default",
@@ -83,23 +83,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
-    },
-    {
-      "Identity": "C:\\Users\\loray\\OneDrive\\Área de Trabalho\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.WebApp\\wwwroot\\css\\Usuarios.css",
-      "SourceId": "PSF.WebApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\loray\\OneDrive\\Área de Trabalho\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.WebApp\\wwwroot\\",
-      "BasePath": "_content/PSF.WebApp",
-      "RelativePath": "css/Usuarios.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\Usuarios.css"
     },
     {
       "Identity": "C:\\Users\\loray\\OneDrive\\Área de Trabalho\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.WebApp\\wwwroot\\favicon.ico",
@@ -253,6 +236,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\ilustra-padrao.png"
+    },
+    {
+      "Identity": "C:\\Users\\loray\\OneDrive\\Área de Trabalho\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.WebApp\\wwwroot\\images\\logo-ESF.jpg",
+      "SourceId": "PSF.WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\loray\\OneDrive\\Área de Trabalho\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.WebApp\\wwwroot\\",
+      "BasePath": "_content/PSF.WebApp",
+      "RelativePath": "images/logo-ESF.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo-ESF.jpg"
     },
     {
       "Identity": "C:\\Users\\loray\\OneDrive\\Área de Trabalho\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.WebApp\\wwwroot\\images\\type-model.png",

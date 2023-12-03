@@ -53,17 +53,14 @@ namespace PSF.Dados.EntityFramework.Configurations
                  .HasColumnName("UsuarioTipo")
                  .HasColumnType("int");
 
-
             builder
-                 .Property(f => f.EsfId)
-                 .HasColumnName("EsfId") 
-                 .HasColumnType("int");
-
+                        .Property(f => f.EsfId)
+                        .HasColumnName("EsfId")
+                        .HasColumnType("int");
             builder
-                 .HasOne(c => c.Esf)  
-                 .WithMany()
-                 .HasForeignKey(c => c.EsfId);
-
+                             .HasOne(c => c.Esf)
+                             .WithMany()
+                             .HasForeignKey(c => c.EsfId);
         }
     }
 }

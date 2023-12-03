@@ -1,0 +1,21 @@
+﻿@model EventosPorMesViewModel
+
+<h1>Eventos para o Mês de @System.Globalization.CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(Model.MesSelecionado)</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Data</th>
+            <th>Valor</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var evento in Model.Eventos)
+        {
+            <tr>
+                <td>@evento.Data.ToShortDateString()</td>
+                <td>@evento.Valor</td>
+            </tr>
+        }
+    </tbody>
+</table>

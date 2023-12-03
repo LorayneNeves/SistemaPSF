@@ -1,39 +1,48 @@
 ﻿@using PSF.Dominio.ValueObjects;
 @model IMAPViewModel
 <div>
+    @if (TempData["MensagemSucesso"] != null)
+    {
+        <div class="alert alert-success" role="alert">
+            <button type="button" class="btn btn-danger btn-sm close-alert" aria-label="Close">X</button>
+            @Html.Raw(TempData["MensagemSucesso"])
+        </div>
+    }
+    @if (TempData["MensagemErro"] != null)
+    {
+        <div class="alert alert-danger" role="alert">
+            <button type="button" class="btn btn-danger btn-sm close-alert" aria-label="Close">X</button>
+            @Html.Raw(TempData["MensagemErro"])
+        </div>
+    }
+
     <div class="container mt-5">
         <div class="row">
             <div class="d-grid gap-2 d-md-block">
                 <h1 class="titulo-bonitao">IMAB - Indicadores Monitorados pela Atenção Básica</h1>
 
-                <form id="eventoForm" asp-action="IMAB" method="post">
-                    <div style="padding-left:30%" class="form-row">
+                <form id="eventoForm" asp-action="IMAB_Confirmar" method="post">
+                    <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="selectMes">Mês</label>
-                            <select id="selectMes" class="form-control">
-                                <option value="01">Janeiro</option>
-                                <option value="02">Fevereiro</option>
-                                <option value="03">Março</option>
-                                <option value="04">Abril</option>
-                                <option value="05">Maio</option>
-                                <option value="06">Junho</option>
-                                <option value="07">Julho</option>
-                                <option value="08">Agosto</option>
-                                <option value="09">Setembro</option>
-                                <option value="10">Outubro</option>
-                                <option value="11">Novembro</option>
-                                <option value="12">Dezembro</option>
-                            </select>
-                       
-                        
                             <label for="selectAno">Ano</label>
-                            <select asp-for="Ano" class="form-control">
-                                <option value="2022">2022</option>
-                                <option value="2023">2023</option>
-                                <option value="2024">2024</option>
+                            <select asp-for="Ano" class="form-control" id="selectAno" name="Ano">
+                                @for (int i = DateTime.Now.Year; i <= DateTime.Now.Year + 10; i++)
+                                {
+                                    <option value="@i">@i</option>
+                                }
                             </select>
                         </div>
-                    </div>                   
+                        <div class="form-group col-md-6">
+                            <label for="selectMes">Mês</label>
+                            <select asp-for="Mes" class="form-control" id="selectMes" name="Mes">
+                                @for (int i = 1; i <= 12; i++)
+                                {
+                                    <option value="@i">@System.Globalization.CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(i)</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+
     <br />
     <table class="table table-sm" id="table-IMAP">
         <thead class="br-list horizontal" role="list" color="blue">
@@ -55,8 +64,8 @@
                 <tr tr class="br-list horizontal">
                     <td style="padding-right:40px;" class="br-item" role="listitem">@item.IndicadorTipo</td>
                     <td class="br-item" role="listitem">@item.Titulo</td>
-                                    <td style="padding:10px;">
-                                        <input style="width:70px; height:30px;"  type="number" class="" inputmode="numeric" data-id="valor" data-indicador-id="@item.IndicadorId">
+                    <td style="padding:10px;">
+                         <input style="width:70px; height:30px;"  type="number" class="" inputmode="numeric" data-id="valor" data-indicador-id="@item.IndicadorId">
                     </td>
                 </tr>
             }
@@ -73,7 +82,21 @@
 @section Scripts 
 {
     <script>
-        $("#button-IMAP-enviar").on("click", function (){
+        document.addEventListener('DOMContentLoaded', function () {
+            var today = new Date();
+            var currentYear = today.getFullYear();
+
+            // Define o valor do select para o ano atual
+            document.getElementById('selectAno').value = currentYear;
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            var today = new Date();
+            var currentMonth = (today.getMonth() + 1).toString().padStart(2, '0');
+
+            // Define o valor do select para o mês atual
+            document.getElementById('selectMes').value = currentMonth;
+        });
+        $("#button-IMAP-enviar").on("click", function () {
             var entidade = new Array();
 
             $("#table-IMAP tbody tr").each(function () {
@@ -84,50 +107,68 @@
                     IndicadorId: $input.data("indicador-id"),
                     Valor: $input.val()
                 });
+            });
 
-                fetch("/Evento/IMAB_Confirmar", {
-                    method: 'POST',
-                    headers: {
-                        'Accept': 'application/json',
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(entidade)
+            const lastRow = entidade[entidade.length - 1];
+
+            fetch("/Evento/IMAB_Confirmar", {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(entidade)
+            })
+                .then(response => response.json())
+                .then(data => {
+                    // Exibir mensagem na mesma página
+                    $("#mensagem-container").html(`<div class="${data.success ? 'alert alert-success' : 'alert alert-danger'}" role="alert">${data.message}</div>`);
+
+                    // Log para o console
+                    console.log('Resposta do servidor:', data);
+
+                    // Recarregar a página
+                    window.location.reload();  // Alterado de location.reload() para window.location.reload()
                 })
 
-                //$.post("/Evento/IMAB_Confirmar", entidade);
+                .catch(error => {
+                    console.error('Erro na solicitação AJAX:', error);
+
+                    // Exibir mensagem de erro na mesma página
+                    $("#mensagem-container").html(`<div class="alert alert-danger" role="alert">Erro na solicitação AJAX: ${error}</div>`);
+
+                    // Recarregar a página (opcional, dependendo do comportamento desejado)
+                    // location.reload();
+                });
+        });
+
+        $("#button-IMAP-enviar").on("click", function () {
+            var entidade = new Array();
+
+            var selectMes = $("#selectMes").val();
+            var selectAno = $("#selectAno").val();
+
+            $("#table-IMAP tbody tr").each(function () {
+                const $self = $(this);
+                const $input = $self.find("[data-id='valor']");
+
+                entidade.push({
+                    IndicadorId: $input.data("indicador-id"),
+                    Valor: $input.val()
+                });
             });
 
+            fetch(`/Evento/IMAB_Confirmar?selectMes=${selectMes}&selectAno=${selectAno}`, {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(entidade)
+            });
         });
+
     </script>
     
-
-    @*<script>
-        $(document).ready(function () {
-            // Quando o formulário é enviado
-            $('#eventoForm').submit(function (e) {
-                e.preventDefault(); // Evita o envio padrão do formulário
-
-                // Obtém os valores selecionados
-                var selectedMes = $('#selectMes').val();
-                var selectedAno = $('#selectAno').val();
-
-                // Cria uma data usando os valores selecionados
-                var dataSelecionada = new Date(selectedAno, selectedMes - 1, 1);
-
-                // Atualiza a propriedade Data da classe Evento
-                var evento = {
-                    EventoId: 1, // Substitua pelo valor adequado
-                    IndicadorId: 2, // Substitua pelo valor adequado
-                    Data: dataSelecionada,
-                    Valor: 0 // Substitua pelo valor adequado
-                };
-
-                // Exibe a data criada (para fins de teste)
-                console.log("Data selecionada: " + dataSelecionada.toISOString());
-
-                // Faça o que for necessário com o objeto 'evento', como enviar para o servidor
-            });
-        });
-    </script>*@
 }
 

@@ -7,19 +7,19 @@
 <form asp-action="InserirConfirmar" asp-controller="Esf" method="POST" class="row g-3 needs-validation">
     <div class="col-12">
         <label for="inputAddress" class="form-label">Nome</label>
-        <input asp-for="Nome" type="text" class="form-control"  placeholder="ESF João Ribeiro">
+        <input asp-for="Nome" type="text" class="form-control" placeholder="ex: ESF João Ribeiro">
         @Html.ValidationMessageFor(x => x.Nome)
     </div>
 
     <div class="col-12">
         <label for="inputAddress" class="form-label">Rua</label>
-        <input asp-for="Enderecos.Rua" type="text" class="form-control" id="inputAddress" placeholder="Dom Pedro II">
+        <input asp-for="Enderecos.Rua" type="text" class="form-control" id="inputAddress" placeholder="ex: Dom Pedro II">
         @Html.ValidationMessageFor(x => x.Enderecos.Rua)
     </div>
 
     <div class="col-12">
         <label for="inputAddress2" class="form-label">Bairro</label>
-        <input asp-for="Enderecos.Bairro" type="text" class="form-control" id="inputAddress2" placeholder="São Geraldo">
+        <input asp-for="Enderecos.Bairro" type="text" class="form-control" id="inputAddress2" placeholder="ex: São Geraldo">
         @Html.ValidationMessageFor(x => x.Enderecos.Bairro)
     </div>
 

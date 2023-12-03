@@ -51,7 +51,9 @@ html body {
     font-size: 12px;
     
 }
-
+.table {
+    padding-top: 40px
+}
 .dataTables_length {
     font-size: 13px;
     color: #0042a9

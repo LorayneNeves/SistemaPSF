@@ -1,23 +1,12 @@
 ﻿@using PSF.Dominio.Entities;
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/css/site.css" />
-    <!-- Link para o arquivo CSS do Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Link para o arquivo JavaScript do Bootstrap (jQuery incluído) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-
-    <title>Lista Usuarios</title>
-</head>
-
 @model Usuario
 
+@{
+    ViewData["Title"] = "Inserir";
+}
 <form asp-action="InserirConfirmar" asp-controller="Usuario" method="POST" class="row g-3 needs-validation">
-
+    <input asp-for="Esf.Nome" type="hidden" />
+    <input asp-for="Esf.Enderecos" type="hidden" />
   <div class="col-md-4">
     <label for="validationCustom01" class="form-label">Nome Completo</label>
             <input type="text" asp-for="Nome" class="form-control" id="validationCustom01" required>
@@ -85,14 +74,24 @@
 
     <div class="col-md-4">
         <label for="validationCustom04" class="form-label">ESF</label>
-        <select asp-for ="EsfId" asp-items="@ViewBag.Esf" class="form-select" id="validationCustom04" required>
+        <select name="EsfId" class="form-select" id="validationCustom04" required>
             <option value="">Selecione o ESF...</option>
+            @foreach (var esf in ViewBag.Esf)
+            {
+                var esfId = Convert.ToInt32(esf.Value);
+                var esfNome = esf.Text;
+                <option value="@esfId">@esfNome</option>
+            }
         </select>
+
+        <div class="invalid-feedback">
+            Por favor, selecione uma cidade.
+        </div>
     </div>
+
+
     <br />
     <div >
-       
-        <a asp-controller="Esf" asp-action="Index" class="btn btn-outline-info" role="button">Info ESF</a>
         
     </div>
   <div class="col-12">

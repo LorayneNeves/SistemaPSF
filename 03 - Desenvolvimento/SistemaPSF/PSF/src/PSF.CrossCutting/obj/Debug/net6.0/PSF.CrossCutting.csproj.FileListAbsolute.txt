@@ -1,0 +1,11 @@
+C:\Users\loray\OneDrive\Área de Trabalho\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.CrossCutting\bin\Debug\net6.0\PSF.CrossCutting.deps.json
+C:\Users\loray\OneDrive\Área de Trabalho\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.CrossCutting\bin\Debug\net6.0\PSF.CrossCutting.dll
+C:\Users\loray\OneDrive\Área de Trabalho\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.CrossCutting\bin\Debug\net6.0\PSF.CrossCutting.pdb
+C:\Users\loray\OneDrive\Área de Trabalho\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.CrossCutting\obj\Debug\net6.0\PSF.CrossCutting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\loray\OneDrive\Área de Trabalho\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.CrossCutting\obj\Debug\net6.0\PSF.CrossCutting.AssemblyInfoInputs.cache
+C:\Users\loray\OneDrive\Área de Trabalho\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.CrossCutting\obj\Debug\net6.0\PSF.CrossCutting.AssemblyInfo.cs
+C:\Users\loray\OneDrive\Área de Trabalho\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.CrossCutting\obj\Debug\net6.0\PSF.CrossCutting.csproj.CoreCompileInputs.cache
+C:\Users\loray\OneDrive\Área de Trabalho\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.CrossCutting\obj\Debug\net6.0\PSF.CrossCutting.dll
+C:\Users\loray\OneDrive\Área de Trabalho\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.CrossCutting\obj\Debug\net6.0\refint\PSF.CrossCutting.dll
+C:\Users\loray\OneDrive\Área de Trabalho\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.CrossCutting\obj\Debug\net6.0\PSF.CrossCutting.pdb
+C:\Users\loray\OneDrive\Área de Trabalho\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.CrossCutting\obj\Debug\net6.0\ref\PSF.CrossCutting.dll

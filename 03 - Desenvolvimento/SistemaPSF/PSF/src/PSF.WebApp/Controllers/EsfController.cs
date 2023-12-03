@@ -38,82 +38,86 @@ namespace PSF.WebApp.Controllers
         [HttpPost]
         public IActionResult InserirConfirmar(ESF endereco)
         {
-            try
-            {
-                if (ModelState.IsValid)
-                {
-                    db.Esf.Add(endereco);
-                    db.SaveChanges();
-                    TempData["MensagemSucesso"] = "ESF cadastrado com sucesso";
-                    return RedirectToAction("Index");
-                }
-                return View(endereco);
-            }
-            catch (System.Exception erro)
-            {
-                TempData["MensagemErro"] = $"Ops! Não conseguimos cadastrar o ESF, tente novamente. <br /> Detalhe do erro: {erro.Message}";
-                return RedirectToAction("Index");
-            }
+            db.Esf.Add(endereco);
+            db.SaveChanges();
+
+            return RedirectToAction("Index");
         }
-        public IActionResult Editar(int usuarioId)
+        public IActionResult Editar(int esfId)
         {
-            var usuario = db.Usuario.FirstOrDefault(u => u.UsuarioId == usuarioId);
-            if (usuario == null)
+            var estados = db.Estados.ToList();
+            var cidades = db.Cidades.ToList();
+            // Armazenar a lista de estados na ViewBag
+            ViewBag.Estados = new SelectList(estados, "EstadoId", "Nome");
+            ViewBag.Cidades = new SelectList(cidades, "CidadeId", "Nome", "EstadoId");
+            var esf = db.Esf.FirstOrDefault(u => u.EsfId == esfId);
+            if (esf == null)
             {
                 return NotFound();
             }
 
-            var esf = db.Esf.ToList();
-            ViewBag.Esf = new SelectList(esf, "EsfId", "Nome");
+            var end = db.Endereco.ToList();
+            ViewBag.Endereco = new SelectList(end, "EnderecoId", "Rua");
 
-            var usuarioViewModel = new EditarUsuarioViewModel
+            var esfViewModel = new EditarEsfViewModel
             {
-                UsuarioId = usuario.UsuarioId,
-                Nome = usuario.Nome,
-                CPF = usuario.CPF,
-                Email = usuario.Email,
-                Status = usuario.Status,
-                Perfil = usuario.Perfil,
-                EsfId = usuario.EsfId
+                EsfId = esf.EsfId,
+                EnderecoId = esf.EnderecoId,
+                Status = esf.Status,
+                Nome = esf.Nome,
+                Enderecos = new Endereco
+                {
+                    Rua = esf.Enderecos.Rua,
+                    Bairro = esf.Enderecos.Bairro,
+                    Cep = esf.Enderecos.Cep,
+                    CidadeId = esf.Enderecos.CidadeId,
+                    EstadoId = esf.Enderecos.EstadoId,
+                    Numero = esf.Enderecos.Numero
+                }
             };
 
-            return View(usuarioViewModel);
+            return View(esfViewModel);
         }
 
         [HttpPost]
-        public IActionResult EditarConfirmar(EditarUsuarioViewModel usuarioModel)
+        public IActionResult EditarConfirmar(EditarEsfViewModel esfModel)
         {
             try
             {
-                var usuarioExistente = db.Usuario.FirstOrDefault(u => u.UsuarioId == usuarioModel.UsuarioId);
+               // var esfExistente = db.Esf.FirstOrDefault(u => u.EsfId == esfModel.EsfId);
+                var esfExistente = db.Esf.Include(e => e.Enderecos).FirstOrDefault(u => u.EsfId == esfModel.EsfId);
 
-                if (usuarioExistente != null)
+                if (esfExistente != null)
                 {
-                    usuarioExistente.Nome = usuarioModel.Nome;
-                    usuarioExistente.CPF = usuarioModel.CPF;
-                    usuarioExistente.Email = usuarioModel.Email;
-                    usuarioExistente.Status = usuarioModel.Status;
-                    usuarioExistente.Perfil = usuarioModel.Perfil;
-                    usuarioExistente.EsfId = usuarioModel.EsfId;
-                    // db.Entry(usuarioExistente).Property(x => x.CPF).IsModified = false;
-                    db.Entry(usuarioExistente).Property(x => x.UsuarioId).IsModified = false;
+                    esfExistente.EnderecoId = esfModel.EnderecoId;
+                    esfExistente.Status = esfModel.Status;
+                    esfExistente.Nome = esfModel.Nome;
+                    if (esfModel.Enderecos != null)
+                    {
+                        esfExistente.Enderecos.Rua = esfModel.Enderecos.Rua;
+                        esfExistente.Enderecos.Bairro = esfModel.Enderecos.Bairro;
+                        esfExistente.Enderecos.EstadoId = esfModel.Enderecos.EstadoId;
+                        esfExistente.Enderecos.Numero = esfModel.Enderecos.Numero;
+                        esfExistente.Enderecos.Cep = esfModel.Enderecos.Cep;
+                    }
 
-                    // Salva as alterações no banco de dados
+                    db.Entry(esfExistente).Property(x => x.EnderecoId).IsModified = false;
+
                     db.SaveChanges();
 
-                    TempData["MensagemSucesso"] = "Usuário atualizado com sucesso";
+                    TempData["MensagemSucesso"] = "ESF atualizado com sucesso";
 
                     return RedirectToAction("Index");
                 }
                 else
                 {
-                    TempData["MensagemErro"] = "Usuário não encontrado";
+                    TempData["MensagemErro"] = "ESF não encontrado";
                     return RedirectToAction("Index");
                 }
             }
             catch (Exception erro)
             {
-                TempData["MensagemErro"] = $"Ops! Não conseguimos atualizar o usuário, tente novamente. Detalhe do erro: {erro.Message}";
+                TempData["MensagemErro"] = $"Ops! Não conseguimos atualizar o ESF, tente novamente. Detalhe do erro: {erro.Message}";
                 return RedirectToAction("Index");
             }
         }

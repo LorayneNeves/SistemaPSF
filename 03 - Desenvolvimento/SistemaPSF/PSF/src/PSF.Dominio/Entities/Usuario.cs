@@ -30,6 +30,7 @@ namespace PSF.Dominio.Entities
         public UsuarioTipo Perfil { get; set; }
 
         public ESF Esf { get; set; }
+
         public int EsfId { get; set; }
 
     }

@@ -16,7 +16,7 @@ namespace PSF.WebApp.Controllers
 
         public IActionResult Index()
         {
-            var enderecos = db.Usuario.Include(e => e.Esf.Enderecos).ToList();
+           var enderecos = db.Usuario.Include(e => e.Esf.Enderecos).ToList();
             var usuarios = db.Usuario
                 .ToList();
 
@@ -31,7 +31,6 @@ namespace PSF.WebApp.Controllers
             return View(usuario);
 
         }
-
         [HttpPost]
         public IActionResult InserirConfirmar(Usuario usuario)
         {

@@ -1,0 +1,8 @@
+﻿<label for="selectMes">Selecione o Mês:</label>
+<select id="selectMes" onchange="location = this.value;">
+    <option value="">Selecione...</option>
+    @for (int i = 1; i <= 12; i++)
+    {
+        <option value="@Url.Action("EventosPorMes", "SeuController", new { mesSelecionado = i })">@System.Globalization.CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(i)</option>
+    }
+</select>

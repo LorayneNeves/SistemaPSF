@@ -51,12 +51,17 @@ namespace PSF.Dados.EntityFramework.Configurations
                 .HasOne(c => c.Estado) 
                 .WithMany() 
                 .HasForeignKey(c => c.EstadoId); 
+         
 
             builder
                 .Property(f => f.CidadeId)
                 .HasColumnName("CidadeId") 
                 .HasColumnType("int");
 
+            builder
+                .HasOne(c => c.Cidade)
+                .WithMany()
+                .HasForeignKey(c => c.CidadeId);
         }
     
     }

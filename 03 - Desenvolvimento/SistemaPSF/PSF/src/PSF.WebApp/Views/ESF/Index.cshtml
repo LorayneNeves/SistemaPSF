@@ -1,8 +1,8 @@
 ﻿@using PSF.Dominio.Entities;
 @model IEnumerable<ESF>
 <div >
-    <div class="d-grid gap-2 d-md-flex justify-content-md-start" style="margin-top:40px; margin-left:30px">
-        <a class="btn btn-primary" role="button" asp-action="Inserir" asp-controller="Esf" style="width:200px;">
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a class="btn btn-primary" role="button" asp-action="Inserir" asp-controller="Esf" style="width:30%;">
             <b>Adicionar</b>
             
             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" fill="currentColor" class="bi bi-house-add-fill" viewBox="0 0 16 16">
@@ -12,6 +12,7 @@
             </svg>
         </a>
     </div>
+    
     <br />
 
     @if (TempData["MensagemSucesso"] != null)
@@ -33,7 +34,7 @@
         <thead lass="br-list horizontal cabeçalho-tabela" role="list" color="blue">
             <tr cclass="table-success">
                 <div class="title">
-                    <h1 class="text-primary"><b>Listagem de Endereços Cadastrados</b></h1>
+                    <h2 class="text-primary"><b>Listagem de Endereços Cadastrados</b></h2>
                 </div>
                 <br />
                 <th class="table-secondary" role="listitem"><b>Nome ESF</b></th>

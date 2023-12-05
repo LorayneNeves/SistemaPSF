@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "aCXIdgGSf47lpCEqAopGLdrDQnOU3PSVCKwnk0aOsYvgWFpDWbymwm4HctqkR0Yh9mqyGi8iAvPSWI0VZf293Q==",
+  "dgSpecHash": "6nsNx9ZbttebfPDKkXIYXGopoks+za2SzlyTQegysUEyE461DU5/BPGlIRtRgt+FhaajDVo8ylANo/Y11ODQzA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\loray\\OneDrive\\Área de Trabalho\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj",
+  "projectFilePath": "C:\\Users\\044860\\Documents\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\loray\\.nuget\\packages\\microsoft.aspnet.mvc\\5.3.0\\microsoft.aspnet.mvc.5.3.0.nupkg.sha512",
-    "C:\\Users\\loray\\.nuget\\packages\\microsoft.aspnet.razor\\3.3.0\\microsoft.aspnet.razor.3.3.0.nupkg.sha512",
-    "C:\\Users\\loray\\.nuget\\packages\\microsoft.aspnet.webpages\\3.3.0\\microsoft.aspnet.webpages.3.3.0.nupkg.sha512",
-    "C:\\Users\\loray\\.nuget\\packages\\microsoft.web.infrastructure\\1.0.0\\microsoft.web.infrastructure.1.0.0.nupkg.sha512"
+    "C:\\Users\\044860\\.nuget\\packages\\microsoft.aspnet.mvc\\5.3.0\\microsoft.aspnet.mvc.5.3.0.nupkg.sha512",
+    "C:\\Users\\044860\\.nuget\\packages\\microsoft.aspnet.razor\\3.3.0\\microsoft.aspnet.razor.3.3.0.nupkg.sha512",
+    "C:\\Users\\044860\\.nuget\\packages\\microsoft.aspnet.webpages\\3.3.0\\microsoft.aspnet.webpages.3.3.0.nupkg.sha512",
+    "C:\\Users\\044860\\.nuget\\packages\\microsoft.web.infrastructure\\1.0.0\\microsoft.web.infrastructure.1.0.0.nupkg.sha512"
   ],
   "logs": [
     {

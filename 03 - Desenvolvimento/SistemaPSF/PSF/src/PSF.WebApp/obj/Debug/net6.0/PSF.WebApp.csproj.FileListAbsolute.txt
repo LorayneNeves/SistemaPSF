@@ -2020,7 +2020,6 @@ C:\Users\044860\Documents\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF
 C:\Users\044860\Documents\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\bin\Debug\net6.0\refs\Microsoft.CSharp.dll
 C:\Users\044860\Documents\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\bin\Debug\net6.0\refs\Microsoft.Extensions.Configuration.Binder.dll
 C:\Users\044860\Documents\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\bin\Debug\net6.0\refs\Microsoft.Extensions.Configuration.CommandLine.dll
-C:\Users\044860\Documents\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\bin\Debug\net6.0\refs\Microsoft.Extensions.Configuration.dll
 C:\Users\044860\Documents\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\bin\Debug\net6.0\refs\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
 C:\Users\044860\Documents\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\bin\Debug\net6.0\refs\Microsoft.Extensions.Configuration.FileExtensions.dll
 C:\Users\044860\Documents\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\bin\Debug\net6.0\refs\Microsoft.Extensions.Configuration.Ini.dll
@@ -2669,3 +2668,9 @@ C:\Users\loray\OneDrive\Área de Trabalho\SistemaPSF\03 - Desenvolvimento\Sistem
 C:\Users\loray\OneDrive\Área de Trabalho\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\bin\Debug\net6.0\Humanizer.dll
 C:\Users\loray\OneDrive\Área de Trabalho\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\loray\OneDrive\Área de Trabalho\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+C:\Users\044860\Documents\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\bin\Debug\net6.0\Humanizer.dll
+C:\Users\044860\Documents\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\bin\Debug\net6.0\Microsoft.Azure.Management.Storage.dll
+C:\Users\044860\Documents\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\044860\Documents\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+C:\Users\044860\Documents\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\bin\Debug\net6.0\Microsoft.Rest.ClientRuntime.dll
+C:\Users\044860\Documents\SistemaPSF\03 - Desenvolvimento\SistemaPSF\PSF\src\PSF.WebApp\bin\Debug\net6.0\Microsoft.Rest.ClientRuntime.Azure.dll

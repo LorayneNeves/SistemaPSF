@@ -4,7 +4,7 @@
     ViewData["Title"] = "Inserir";
 }
 
-<form asp-action="InserirConfirmar" asp-controller="Esf" method="POST" class="row g-3 needs-validation">
+<form asp-action="InserirConfirmar" asp-controller="Esf" autocomplete="off" method="POST" class="row g-3 needs-validation">
     <div class="col-12">
         <label for="inputAddress" class="form-label">Nome</label>
         <input asp-for="Nome" type="text" class="form-control" placeholder="ex: ESF João Ribeiro">
@@ -13,19 +13,19 @@
 
     <div class="col-12">
         <label for="inputAddress" class="form-label">Rua</label>
-        <input asp-for="Enderecos.Rua" type="text" class="form-control" id="inputAddress" placeholder="ex: Dom Pedro II">
+        <input asp-for="Enderecos.Rua" type="text" class="form-control" autocomplete="off" id="inputAddress" placeholder="ex: Dom Pedro II">
         @Html.ValidationMessageFor(x => x.Enderecos.Rua)
     </div>
 
     <div class="col-12">
         <label for="inputAddress2" class="form-label">Bairro</label>
-        <input asp-for="Enderecos.Bairro" type="text" class="form-control" id="inputAddress2" placeholder="ex: São Geraldo">
+        <input asp-for="Enderecos.Bairro" type="text" class="form-control" autocomplete="off" id="inputAddress2" placeholder="ex: São Geraldo">
         @Html.ValidationMessageFor(x => x.Enderecos.Bairro)
     </div>
 
     <div class="col-md-2">
         <label for="validationCustom01" class="form-label">Numero</label>
-        <input type="number" asp-for="Enderecos.Numero" class="form-control" id="validationCustom01" required>
+        <input type="number" asp-for="Enderecos.Numero" class="form-control" autocomplete="off" id="validationCustom01" required>
         @Html.ValidationMessageFor(x => x.Enderecos.Numero)
         <div class="valid-feedback">
 
@@ -57,7 +57,7 @@
 
     <div class="col-md-2">
         <label for="inputZip" class="form-label">CEP</label>
-        <input asp-for="Enderecos.Cep" type="text" class="form-control" id="inputZip">
+        <input asp-for="Enderecos.Cep" type="text" autocomplete="off" class="form-control" id="inputZip">
         @Html.ValidationMessageFor(x => x.Enderecos.Cep)
     </div>
 

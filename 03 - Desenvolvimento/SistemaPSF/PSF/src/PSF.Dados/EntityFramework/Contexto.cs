@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 using PSF.Dados.EntityFramework.Configurations;
 using PSF.Dominio.Entities;
 using PSF.Dominio.ValueObjects;
@@ -26,7 +27,7 @@ namespace PSF.Dados.EntityFramework
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data source = BANDEIRA,1434; 
+            optionsBuilder.UseSqlServer(@"Data source = 201.62.57.93, 1434; 
                                     Database = BD044860; 
                                     User ID = RA044860; 
                                     Password = 044860;
@@ -42,6 +43,15 @@ namespace PSF.Dados.EntityFramework
             modelBuilder.ApplyConfiguration(new EnderecoConfiguration());
             modelBuilder.ApplyConfiguration(new IndicadorConfiguration());
             modelBuilder.ApplyConfiguration(new EventoConfiguration());
+
+        }
+        public IEnumerable<Relatorio> GetIndicatorsByDateRange(DateTime startDate, DateTime endDate)
+        {
+            var parameters = new object[] { startDate, endDate };
+
+            var query = "EXEC GetIndicatorsByDateRange @StartDate, @EndDate";
+
+            return Set<Relatorio>().FromSqlRaw(query, parameters).ToList();
         }
     }
 }

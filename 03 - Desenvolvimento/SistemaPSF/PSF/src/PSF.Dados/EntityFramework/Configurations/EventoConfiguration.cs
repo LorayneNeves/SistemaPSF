@@ -31,7 +31,7 @@ namespace PSF.Dados.EntityFramework.Configurations
             builder
                .Property(f => f.Valor)
                .HasColumnName("Valor")
-               .HasColumnType("int");   
+               .HasColumnType("int");
 
             builder
               .Property(f => f.IndicadorId)
@@ -43,6 +43,17 @@ namespace PSF.Dados.EntityFramework.Configurations
                .WithMany()
                .HasForeignKey(c => c.IndicadorId);
 
-        }
+            builder
+             .Property(f => f.UsuarioId)
+             .HasColumnName("UsuarioId")
+             .HasColumnType("int");
+
+            builder
+               .HasOne(c => c.Usuario)
+               .WithMany()
+               .HasForeignKey(c => c.UsuarioId);
+
+         
+        } 
     }
 }

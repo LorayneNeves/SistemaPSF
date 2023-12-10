@@ -2,6 +2,18 @@
     html {
         font-size: 16px;
     }
+    #sidebar {
+        width: 0; /* Ocultar o menu */
+        padding-top: 0; /* Remover o padding superior */
+    }
+
+    main {
+        margin-left: 0; /* Ajuste para conteúdo ocupar a largura total */
+    }
+
+    #toggle-btn {
+        margin-left: 0px; /* Adicionar algum espaçamento ao botão em telas menores */
+    }
 }
 
 html {

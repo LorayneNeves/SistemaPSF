@@ -70,7 +70,9 @@ namespace PSF.WebApp.Controllers
                 Email = usuario.Email,
                 Status = usuario.Status,
                 Perfil = usuario.Perfil,
-                EsfId = usuario.EsfId
+                EsfId = usuario.EsfId,
+                Senha = usuario.Senha
+
             };
 
             return View(usuarioViewModel); 
@@ -91,8 +93,9 @@ namespace PSF.WebApp.Controllers
                     usuarioExistente.Status = usuarioModel.Status;
                     usuarioExistente.Perfil = usuarioModel.Perfil;
                     usuarioExistente.EsfId = usuarioModel.EsfId;
-                   // db.Entry(usuarioExistente).Property(x => x.CPF).IsModified = false;
-                    db.Entry(usuarioExistente).Property(x => x.UsuarioId).IsModified = false;
+					usuarioExistente.Senha = usuarioModel.Senha;
+					// db.Entry(usuarioExistente).Property(x => x.CPF).IsModified = false;
+					db.Entry(usuarioExistente).Property(x => x.UsuarioId).IsModified = false;
 
                     // Salva as alterações no banco de dados
                     db.SaveChanges();

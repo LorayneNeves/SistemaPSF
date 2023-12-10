@@ -1,42 +1,44 @@
 ﻿@using PSF.Dominio.Entities;
-
 @model EditarEsfViewModel;
-
+@{
+    ViewData["Title"] = "Editar ESF";
+}
 <form asp-action="EditarConfirmar" asp-controller="Esf" method="POST" class="row g-3 needs-validation">
-
     <input asp-for="EsfId" type="hidden" />
-
-
+    <h3 class="card-title text-primary ">
+        <br>
+        <b>Cadastrar novo endereço</b>
+    </h3>
     <div class="col-12">
-        <label for="inputAddress" class="form-label">Nome</label>
+        <br>
+        <label for="inputAddress" class="text-primary"><b>Nome</b></label>
         <input asp-for="Nome" type="text" class="form-control" placeholder="ESF João Ribeiro" id="validationCustom01" required>
         @Html.ValidationMessageFor(x => x.Nome)
     </div>
-
     <div class="col-12">
-        <label for="inputAddress" class="form-label">Rua</label>
+        <br>
+        <label for="inputAddress" class="text-primary"><b>Rua</b></label>
         <input asp-for="Enderecos.Rua" type="text" class="form-control" id="inputAddress" placeholder="Dom Pedro II">
         @Html.ValidationMessageFor(x => x.Enderecos.Rua)
     </div>
-
     <div class="col-12">
-        <label for="inputAddress2" class="form-label">Bairro</label>
+        <br>
+        <label for="inputAddress2" class="text-primary"><b>Bairro</b></label>
         <input asp-for="Enderecos.Bairro" type="text" class="form-control" id="inputAddress2" placeholder="São Geraldo">
         @Html.ValidationMessageFor(x => x.Enderecos.Bairro)
     </div>
-
     <div class="col-md-2">
-        <label for="validationCustom01" class="form-label">Numero</label>
+        <br>
+        <label for="validationCustom01" class="text-primary"><b>Numero</b></label>
         <input type="number" asp-for="Enderecos.Numero" class="form-control" id="validationCustom01" required>
         @Html.ValidationMessageFor(x => x.Enderecos.Numero)
         <div class="valid-feedback">
-
             Bom!
         </div>
     </div>
-
     <div class="col-md-6">
-        <label for="validationCustom04" class="form-label">Estado</label>
+        <br>
+        <label for="validationCustom04" class="text-primary"><b>Estado</b></label>
         <select asp-for="Enderecos.EstadoId" asp-items="@ViewBag.Estados" class="form-select" id="Estado" required>
             <option value="">Selecione o estado...</option>
             @Html.ValidationMessageFor(x => x.Enderecos.EstadoId)
@@ -45,9 +47,9 @@
             Por favor, selecione um estado válido.
         </div>
     </div>
-
     <div class="col-md-6">
-        <label for="validationCustom05" class="form-label">Cidade</label>
+        <br>
+        <label for="validationCustom05" class="text-primary"><b>Cidade</b></label>
         <select asp-for="Enderecos.CidadeId" asp-items="@ViewBag.Cidades" class="form-select" id="Cidade" required>
             <option value="">Selecione a cidade...</option>
             @Html.ValidationMessageFor(x => x.Enderecos.CidadeId)
@@ -56,23 +58,23 @@
             Por favor, selecione uma cidade.
         </div>
     </div>
-
     <div class="col-md-2">
-        <label for="inputZip" class="form-label">CEP</label>
+        <br>
+        <label for="inputZip" class="text-primary"><b>CEP</b></label>
         <input asp-for="Enderecos.Cep" type="text" class="form-control" id="inputZip">
         @Html.ValidationMessageFor(x => x.Enderecos.Cep)
     </div>
-
     <div class="col-md-6">
+        <br>
+        <label for="inputZip" class="text-primary"><b>Status</b></label>
         <select asp-for="Status" class="form-select form-select-sm" aria-label="Small select example">
             <option selected>Status do Esf</option>
             <option value="true">Ativar</option>
             <option value="false">Desativar</option>
         </select>
     </div>
-
-
     <div class="col-12">
+        <br>
         <button class="btn btn-primary" type="submit">Confirmar Edição</button>
         <a class="btn btn-secondary btn-block" asp-controller="Esf" asp-action="Index" role="button">Voltar</a>
     </div>
@@ -80,28 +82,40 @@
 @section Scripts {
 
     <script>
-        $("#Estado").on("change", function () {
+
+        $("#Estado").on("change", function () 
+        {
             const estadoId = $(this).val();
 
             $.ajax({
-                url: '@Url.Action("GetCidades", "Cidade")',  // Certifique-se de que está gerando a URL correta
+                url: '@Url.Action("GetCidades", "Cidade")',  
                 type: 'GET',
-                dataType: 'json',  // Indicando que estamos esperando dados JSON
-                contentType: 'application/json; charset=utf-8',  // Indicando o tipo de conteúdo enviado
+                dataType: 'json', 
+                contentType: 'application/json; charset=utf-8', 
                 data: { estadoId: estadoId },
-                success: function (cidades) {
+                success: function (cidades) 
+                {
+                    
                     $("#Cidade").empty();
 
-                    $.each(cidades, function (index, cidade) {
+                    $.each(cidades, function (index, cidade) 
+                    {
+                        
                         $("#Cidade").append('<option value="' + cidade.cidadeId + '">' + cidade.nome + '</option>');
+                    
                     });
-                },
-                error: function (error) {
-                    console.error('Erro ao buscar cidades: ', error);
-                }
-            });
-        });
 
+                },
+                error: function (error)
+                {
+
+                    console.error('Erro ao buscar cidades: ', error);
+
+                }
+
+            });
+
+        });
 
     </script>
 

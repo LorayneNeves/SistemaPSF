@@ -30,3 +30,8 @@
     });
 
 });
+$(document).ready(function () {
+    $(".close-alert").on("click", function () {
+        $(this).closest('.alert').hide();
+    });
+});

@@ -1,34 +1,36 @@
 ﻿@using PSF.Dominio.Entities;
-
 @model EditarUsuarioViewModel;
-
+@{
+    ViewData["Title"] = "Editar Funcionário";
+}
 <form asp-action="EditarConfirmar" asp-controller="Usuario" method="POST" class="row g-3 needs-validation">
-
     <input asp-for="UsuarioId" type="hidden" />
-
+    <h3 class="card-title text-primary ">
+        <br>
+        <b>Editar funcionário</b>
+    </h3>
     <div class="col-md-4">
-        <label for="validationCustom01" class="form-label">Nome Completo</label>
+        <br>
+        <label for="validationCustom01" class="text-primary"><b>Nome Completo</b></label>
         <input type="text" asp-for="Nome" class="form-control" id="validationCustom01" required>
         @Html.ValidationMessageFor(x => x.Nome)
         <div class="valid-feedback">
-
             Bom!
         </div>
     </div>
-
     <div class="col-md-4">
-        <label for="validationCustom02" class="form-label">CPF</label>
+        <br>
+        <label for="validationCustom02" class="text-primary"><b>CPF</b></label>
         <input type="text" class="form-control" id="validationCustom02" asp-for="CPF" required>
         @Html.ValidationMessageFor(x => x.CPF)
         <span asp-validation-for="CPF" class="text-danger"></span>
         <div class="valid-feedback">
-
             Bom!
         </div>
     </div>
-
     <div class="col-md-4">
-        <label for="validationCustomUsername" class="form-label">Email:</label>
+        <br>
+        <label for="validationCustomUsername" class="text-primary"><b>Email</b></label>
         <div class="input-group has-validation">
             <span class="input-group-text" id="inputGroupPrepend">
                 <svg class="text-primary" style="--bs-text-opacity: .5;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-threads-fill" viewBox="0 0 16 16">
@@ -36,17 +38,22 @@
                     <path d="M2.59 16h10.82A2.59 2.59 0 0 0 16 13.41V2.59A2.59 2.59 0 0 0 13.41 0H2.59A2.59 2.59 0 0 0 0 2.59v10.82A2.59 2.59 0 0 0 2.59 16ZM5.866 5.91c.567-.81 1.315-1.126 2.35-1.126.73 0 1.351.246 1.795.711.443.466.696 1.132.754 1.983.245.103.472.224.678.363.832.559 1.29 1.395 1.29 2.353 0 2.037-1.67 3.806-4.692 3.806-2.595 0-5.291-1.51-5.291-6.004C2.75 3.526 5.361 2 8.033 2c1.234 0 4.129.182 5.217 3.777l-1.02.264c-.842-2.56-2.607-2.968-4.224-2.968-2.675 0-4.187 1.628-4.187 5.093 0 3.107 1.69 4.757 4.222 4.757 2.083 0 3.636-1.082 3.636-2.667 0-1.079-.906-1.595-.953-1.595-.177.925-.651 2.482-2.733 2.482-1.213 0-2.26-.838-2.26-1.936 0-1.568 1.488-2.136 2.663-2.136.44 0 .97.03 1.247.086 0-.478-.404-1.296-1.426-1.296-.911 0-1.16.288-1.45.624l-.024.027c-.202-.135-.875-.601-.875-.601Z" />
                 </svg>
             </span>
-
             <input type="text" class="form-control" id="validationCustomUsername" asp-for="Email" required placeholder="exemplo: anamaria@gmail.com">
-
-
             <div class="invalid-feedback">
                 Favor informe um e-mail de contato, esta informação será importante mais tarde.
             </div>
         </div>
     </div>
-
+    <div class="col-md-4">
+        <br>
+        <label for="validationCustom01" class="text-primary"><b>Senha</b></label>
+        <input type="password" asp-for="Senha" class="form-control" autocomplete="off" id="validationCustom01" required>
+        <div class="valid-feedback">
+            Bom!
+        </div>
+    </div>
     <div class="grid text-center">
+        <br>
         <select asp-for="Perfil" class="form-select form-select-sm" aria-label="Small select example">
             <option selected>Selecione o perfil do usuário</option>
             <option value="@UsuarioTipo.Admin">Administrador</option>
@@ -55,24 +62,28 @@
         @Html.ValidationMessageFor(x => x.Perfil)
     </div>
     <div class="grid text-center">
+        <br>
         <select asp-for="Status" class="form-select form-select-sm" aria-label="Small select example">
             <option selected>Status do usuário</option>
             <option value="true">Ativar</option>
             <option value="false">Desativar</option>
         </select>
     </div>
-
     <div class="col-md-4">
-        <label for="validationCustom04" class="form-label">ESF</label>
+        <br>
+        <label for="validationCustom04" class="text-primary"><b>ESF</b></label>
         <select asp-for="EsfId" asp-items="@ViewBag.Esf" class="form-select" id="validationCustom04" required>
             <option value="">Selecione o ESF...</option>
         </select>
-    </div>
-    <br />
-    <div>
-        <a asp-controller="Esf" asp-action="Index" class="btn btn-outline-info" role="button">Info ESF</a>
+        <a asp-controller="Esf" asp-action="Index" class="btn btn-outline text-primary" role="button" style="margin-bottom: 25%;">
+            <i>ESF</i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
+            </svg>
+        </a>
     </div>
     <div class="col-12">
+        <br>
         <button class="btn btn-primary" type="submit">Confirmar Edição</button>
         <a class="btn btn-secondary btn-block" asp-controller="Usuario" asp-action="Index" role="button">Voltar</a>
     </div>

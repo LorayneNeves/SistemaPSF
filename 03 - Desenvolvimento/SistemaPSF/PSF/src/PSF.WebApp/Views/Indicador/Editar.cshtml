@@ -1,21 +1,22 @@
 ﻿@using PSF.Dominio.Entities;
-
 @model EditarIndicadorViewModel;
-
+@{
+    ViewData["Title"] = "Editar Indicador";
+}
 <form asp-action="EditarConfirmar" asp-controller="Indicador" method="POST" class="row g-3 needs-validation">
-
     <input asp-for="IndicadorId" type="hidden" />
+    <br>
     <div class="form-floating mb-3">
         <textarea asp-for="Titulo" class="form-control" placeholder="Descrição do indicador aqui" id="validationCustom01" style="height: 100px" required></textarea>
-        <label for="validationCustom01" class="form-label">Descrição do Indicador</label>
+        <label for="validationCustom01" class="text-primary" style="margin-left:9px">Descrição do indicador aqui</label>
+        <br>
         @Html.ValidationMessageFor(x => x.Titulo)
         <div class="invalid-feedback">
             Please choose a username.
         </div>
     </div>
-
     <div class="grid text-center">
-        <select asp-for="IndicadorTipo" class="form-select form-select-sm" aria-label="Small select example">
+        <select asp-for="IndicadorTipo" class="form-select form-select-sm text-primary" aria-label="Small select example">
             <option selected>Selecione o tipo</option>
             <option value="@PSF.Dominio.ValueObjects.IndicadorTipo.Nenhum">Nenhum</option>
             <option value="@PSF.Dominio.ValueObjects.IndicadorTipo.COVID">COVID</option>
@@ -25,18 +26,15 @@
             <option value="@PSF.Dominio.ValueObjects.IndicadorTipo.Outro">Outro</option>
         </select>
     </div>
-
     <div class="grid text-center">
-        <select asp-for="Status" class="form-select form-select-sm" aria-label="Small select example">
+        <select asp-for="Status" class="form-select form-select-sm text-primary" aria-label="Small select example">
             <option selected>Status do indicador</option>
             <option value="true">Ativar</option>
             <option value="false">Desativar</option>
         </select>
     </div>
-
     <div class="col-12">
         <button class="btn btn-primary" type="submit">Confirmar Cadastro</button>
         <a class="btn btn-secondary btn-block" asp-controller="Indicador" asp-action="Index" role="button">Voltar</a>
     </div>
-
 </form>

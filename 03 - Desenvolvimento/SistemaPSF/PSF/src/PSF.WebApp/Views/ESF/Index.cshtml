@@ -1,20 +1,10 @@
 ﻿@using PSF.Dominio.Entities;
 @model IEnumerable<ESF>
-<div >
-    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-        <a class="btn btn-primary" role="button" asp-action="Inserir" asp-controller="Esf" style="width:30%;">
-            <b>Adicionar</b>
-            
-            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" fill="currentColor" class="bi bi-house-add-fill" viewBox="0 0 16 16">
-                <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 1 1-1 0v-1h-1a.5.5 0 1 1 0-1h1v-1a.5.5 0 0 1 1 0" />
-                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z" />
-                <path d="m8 3.293 4.712 4.712A4.5 4.5 0 0 0 8.758 15H3.5A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z" />
-            </svg>
-        </a>
-    </div>
-    
-    <br />
-
+@{
+    ViewData["Title"] = "Lista de ESF's Cadastrados";
+}
+<div>
+    <br>
     @if (TempData["MensagemSucesso"] != null)
     {
         <div class="alert alert-success" role="alert">
@@ -29,25 +19,36 @@
             @Html.Raw(TempData["MensagemErro"])
         </div>
     }
-    </br>
-    <table class="table table-striped table-hover table-bordered" id="table-usuarios">
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <br>
+        <a class="btn btn-primary" role="button" asp-action="Inserir" asp-controller="Esf" style="width:30%;">
+            <b>Adicionar</b>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" fill="currentColor" class="bi bi-house-add-fill" viewBox="0 0 16 16">
+                <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 1 1-1 0v-1h-1a.5.5 0 1 1 0-1h1v-1a.5.5 0 0 1 1 0" />
+                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z" />
+                <path d="m8 3.293 4.712 4.712A4.5 4.5 0 0 0 8.758 15H3.5A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z" />
+            </svg>
+        </a>
+    </div>
+
+    <table class="table table-hover" id="table-usuarios">
         <thead lass="br-list horizontal cabeçalho-tabela" role="list" color="blue">
-            <tr cclass="table-success">
+            <tr class="text-primary text-center">
+                <br>
                 <div class="title">
                     <h2 class="text-primary"><b>Listagem de Endereços Cadastrados</b></h2>
                 </div>
-                <br />
-                <th class="table-secondary" role="listitem"><b>Nome ESF</b></th>
-                <th class="table-secondary" role="listitem"><b>Endereços</b></th>
-                <th class="table-secondary" role="listitem"><b>Numero </b></th>
-                <th class="table-secondary" role="listitem"><b>CEP</b></th>
-                <th class="table-secondary" role="listitem"><b>Bairro</b></th>
-                <th class="table-secondary" role="listitem"><b>Estado</b></th>
-                <th class="table-secondary" role="listitem"><b>Cidade</b></th>
-                <th class="table-secondary" role="listitem"><b>Status</b></th>
-                <th class="table-secondary" role="listitem">
-                    <b>Editar</b>
-                </th>
+                <br>
+                <th role="listitem"><b>Nome ESF</b></th>
+                <th role="listitem"><b>Endereços</b></th>
+                <th role="listitem"><b>Numero </b></th>
+                <th role="listitem"><b>CEP</b></th>
+                <th role="listitem"><b>Bairro</b></th>
+                <th role="listitem"><b>Estado</b></th>
+                <th role="listitem"><b>Cidade</b></th>
+                <th role="listitem"><b>Status</b></th>
+                <th role="listitem"><b>Editar</b></th>
                 <span class="br-divider"></span>
             </tr>
         </thead>
@@ -58,7 +59,7 @@
                 <tr tr class="br-list horizontal">
                     <td class="table-light" role="listitem">@item.EsfId - @item.Nome</td>
                     <td class="table-light" role="listitem">@item.Enderecos.Rua</td>
-                    <td class ="table-light" role="listitem">@item.Enderecos.Numero </td>
+                    <td class="table-light" role="listitem">@item.Enderecos.Numero </td>
                     <td class="table-light" role="listitem">@item.Enderecos.Cep</td>
                     <td class="table-light" role="listitem"> @item.Enderecos.Bairro</td>
                     <td class="table-light" role="listitem"> @item.Enderecos.Estado.Nome</td>
@@ -83,9 +84,11 @@
                     </td>
                     <td class="table-light" role="listitem">
                         <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                            <a asp-action="Editar" asp-controller="Esf" asp-route-esfId="@item.EsfId" class="btn btn-secondary" style="width:70px">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
-                                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                            <a asp-action="Editar" asp-controller="Esf" asp-route-esfId="@item.EsfId" class="text-primary text-center btn border-primary" style="width:70px">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-gear-fill" viewBox="0 0 16 16">
+                                    <path d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708z" />
+                                    <path d="M11.07 9.047a1.5 1.5 0 0 0-1.742.26l-.02.021a1.5 1.5 0 0 0-.261 1.742 1.5 1.5 0 0 0 0 2.86 1.504 1.504 0 0 0-.12 1.07H3.5A1.5 1.5 0 0 1 2 13.5V9.293l6-6 4.724 4.724a1.5 1.5 0 0 0-1.654 1.03Z" />
+                                    <path d="m13.158 9.608-.043-.148c-.181-.613-1.049-.613-1.23 0l-.043.148a.64.64 0 0 1-.921.382l-.136-.074c-.561-.306-1.175.308-.87.869l.075.136a.64.64 0 0 1-.382.92l-.148.045c-.613.18-.613 1.048 0 1.229l.148.043a.64.64 0 0 1 .382.921l-.074.136c-.306.561.308 1.175.869.87l.136-.075a.64.64 0 0 1 .92.382l.045.149c.18.612 1.048.612 1.229 0l.043-.15a.64.64 0 0 1 .921-.38l.136.074c.561.305 1.175-.309.87-.87l-.075-.136a.64.64 0 0 1 .382-.92l.149-.044c.612-.181.612-1.049 0-1.23l-.15-.043a.64.64 0 0 1-.38-.921l.074-.136c.305-.561-.309-1.175-.87-.87l-.136.075a.64.64 0 0 1-.92-.382ZM12.5 14a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
                                 </svg>
                             </a>
                         </div>

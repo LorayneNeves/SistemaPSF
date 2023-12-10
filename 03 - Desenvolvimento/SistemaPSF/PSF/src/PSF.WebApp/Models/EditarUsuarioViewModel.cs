@@ -17,6 +17,7 @@ namespace PSF.WebApp.Models
         public ESF Esf { get; set; }
         [Required(ErrorMessage = "O campo EsfId é obrigatório.")]
         public int EsfId { get; set; }
-       
-    }
+		[Required(ErrorMessage = "A senha é obrigatória.")]
+        public string Senha { get; set; }
+	}
 }

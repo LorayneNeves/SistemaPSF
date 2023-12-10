@@ -1,6 +1,5 @@
 ﻿<div class="container-fluid">
     <div class="row">
-        <br /> 
         <div class="container-fluid">
             <button type="button" id="toggle-btn" class="text-primary">
                 <svg xmlns="http://www.w3.org/2000/svg" width="1.8rem" height="1.8rem" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
@@ -10,7 +9,7 @@
         </div>
         <nav id="sidebar" class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="position-sticky">
-                <ul class="nav flex-column">                   
+                <ul class="nav flex-column">
                     <li style="padding-top:50px" class="nav-item">
                         <a class="nav-link text-primary" alt="logo" asp-area="" asp-controller="Home" asp-action="Index">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
@@ -22,7 +21,7 @@
 
                     <li class="nav-item">
                         <a class="nav-link text-primary" asp-area="" asp-controller="Indicador" asp-action="Index">
-                           
+
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="currentColor" class="bi bi-heart-pulse-fill" viewBox="0 0 16 16">
                                 <path d="M1.475 9C2.702 10.84 4.779 12.871 8 15c3.221-2.129 5.298-4.16 6.525-6H12a.5.5 0 0 1-.464-.314l-1.457-3.642-1.598 5.593a.5.5 0 0 1-.945.049L5.889 6.568l-1.473 2.21A.5.5 0 0 1 4 9z" />
                                 <path d="M.88 8C-2.427 1.68 4.41-2 7.823 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C11.59-2 18.426 1.68 15.12 8h-2.783l-1.874-4.686a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8H.88Z" />
@@ -33,10 +32,10 @@
                     <li class="nav-item">
                         <a class="nav-link text-primary" asp-area="" asp-controller="Evento" asp-action="SelecionarRelatorio">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16">
-                                 <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0"/>
+                                <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0" />
                             </svg>
                         </a>
-                     </li>
+                    </li>
 
                     @if (Model.Perfil == PSF.Dominio.Entities.UsuarioTipo.Admin)
                     {
@@ -69,11 +68,46 @@
                 </ul>
             </div>
         </nav>
-        
+
     </div>
 </div>
 
 <style>
+    #sidebar .nav-link {
+        display: flex;
+        align-items: center;
+        padding: 30px;
+        text-decoration: none;
+    }
+    #sidebar .nav-link svg {
+        margin-right: 10px;
+    }
+    #toggle-btn {
+        cursor: pointer;
+        color: black;
+        border: none;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        padding: 10px
+    }
+    #sidebar .navbar-brand {
+        width: 50%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #sidebar ul {
+        width: 100%;
+    }
+    #sidebar ul li {
+            width: 100%;
+    }
+    main {
+        margin-left: 20px;
+    }
+    #content {
+        transition: margin-left 0.2s;
+    }
     #sidebar {
         transition: margin-left 0.3s;
         position: fixed;
@@ -82,67 +116,24 @@
         bottom: 0;
         z-index: 1000;
         width: 1px;
-        padding-top: 50px; 
-      
+        padding-top: 50px;
     }
-
-        #sidebar .navbar-brand {
-            width: 50%;
-            text-align: center;
-            margin-bottom: 20px; /* Adicionado para espaçamento entre a imagem e os links */
-        }
-
-        #sidebar ul {
-            width: 100%;
-        }
-
-            #sidebar ul li {
-                width: 100%;
-               
-            }
-
-    main {
-        margin-left: 20px; /* Ajuste conforme a largura da barra lateral */
-    }
-
-    #content {
-        transition: margin-left 0.2s;
-        
-    }
-
-    #toggle-btn {
-        cursor: pointer;
-        color: black;
-        border: none;
-        background-color: transparent;
-        
-        
-    }
-
-        #sidebar .nav-link svg{
-            margin-right: 10px;
-            margin-left: 9px;
-            margin-bottom: 50px;
-        
-        }
-        
-    
- 
-
-    }
- 
 </style>
 <script>
-    document.getElementById('toggle-btn').addEventListener('click', function () {
+    document.getElementById('toggle-btn').addEventListener('click', function () 
+    {
         var sidebar = document.getElementById('sidebar');
         var content = document.getElementById('content');
 
-        if (sidebar.style.marginLeft === '0px') {
-            sidebar.style.marginLeft = '-60px'; /* ou o valor que preferir para esconder completamente */
+        if (sidebar.style.marginLeft === '0px') 
+        {
+            sidebar.style.marginLeft = '-100%'; 
             content.style.marginLeft = '0';
-        } else {
+        } 
+        else 
+        {
             sidebar.style.marginLeft = '0';
-            content.style.marginLeft = '200px'; /* ou o valor que preferir para dar espaço ao menu */
+            content.style.marginLeft = '200px';
         }
     });
 </script>

@@ -1,19 +1,11 @@
 ﻿@using PSF.Dominio.Entities;
 @model IEnumerable<Usuario>
+@{
+    ViewData["Title"] = "Lista de Funcinários";
+}
 <div>
-    <br />
-    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-        <a class="btn btn-primary" role="button" asp-action="Inserir" asp-controller="Usuario" style="width:30%">
-            <b>Adicionar</b>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
-                <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-                <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5" />
-            </svg>
-        </a>
-    </div>
-    <br />
-
-    @if(TempData["MensagemSucesso"] != null)
+    <br>
+    @if (TempData["MensagemSucesso"] != null)
     {
         <div class="alert alert-success" role="alert">
             <button type="button" class="btn btn-danger btn-sm close-alert" aria-label="Close">X</button>
@@ -27,42 +19,48 @@
             @Html.Raw(TempData["MensagemErro"])
         </div>
     }
-
-    <table cclass="table table-striped table-bordered table-sm" id="table-usuarios">
+    <br>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a class="btn btn-primary" role="button" asp-action="Inserir" asp-controller="Usuario" style="width:30%">
+            <b>Adicionar</b>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+                <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5" />
+            </svg>
+        </a>
+    </div>
+    <br>
+    <table class="table table text-lg-center table-hover" id="table-usuarios">
         <thead class="thead-light" role="list" color="blue">
-            <br />
-            <tr class="header">
+            <tr class="header text-primary text-sm-start">
+                <br>
                 <div class="title">
                     <h2 class="text-primary"><b>Listagem de Usuários Cadastrados</b></h2>
-                    <br />
                 </div>
-                <br />
-                <th style="text-align:center;" class="br-item" role="listitem"><b>Nome</b></th>
-                <th style="text-align:center;" class="br-item" role="listitem"><b>CPF</b></th>
-                <th style="text-align:center;" class="br-item" role="listitem"><b>Email</b></th>
-                <th style="text-align:center;" class="br-item" role="listitem"><b>Endereço</b></th>
-                <th  class="br-item" role="listitem"><b>Bairro</b></th>
-                <th style="text-align:center;" class="br-item" role="listitem"><b>ESF</b></th>
+                <br>
+                <th class="br-item" role="listitem"><b>Nome</b></th>
+                <th class="br-item" role="listitem"><b>CPF</b></th>
+                <th class="br-item" role="listitem"><b>Email</b></th>
+                <th class="br-item" role="listitem"><b>Endereço</b></th>
+                <th class="br-item" role="listitem"><b>Bairro</b></th>
+                <th class="br-item" role="listitem"><b>ESF</b></th>
                 <th class="br-item" role="listitem"><b>Status</b></th>
                 <th class="br-item" role="listitem"><b>Perfil</b></th>
-                <th  class="br-item" role="listitem">
-                    <b>Editar</b>
-                </th>
+                <th class="br-item" role="listitem"><b>Editar</b></th>
                 <span class="br-divider"></span>
             </tr>
         </thead>
-
         <tbody class="header">
             @foreach (var item in Model)
             {
-                <tr tr class="br-list horizontal">
+                <tr tr class="br-list horizontal text-sm-start">
                     <td style="padding:25px; padding-right:10px" class="br-item" role="listitem">@item.Nome </td>
-                    <td style="padding-right:40px" class="br-item" role="listitem">@item.CPF</td>
-                    <td style="padding-right:40px" class="br-item" role="listitem"> @item.Email</td>
-                    <td style="padding-right:40px" class="br-item" role="listitem">@item.Esf.Enderecos.Rua, @item.Esf.Enderecos.Numero</td>
-                    <td style="padding-right:10px" class="br-item" role="listitem">@item.Esf.Enderecos.Bairro</td>
-                    <td style="padding-right:10px" class="br-item" role="listitem">@item.EsfId - @item.Esf.Nome</td>
-                    <td style="padding-right:10px" class="br-item" role="listitem">
+                    <td class="br-item" role="listitem">@item.CPF</td>
+                    <td class="br-item" role="listitem"> @item.Email</td>
+                    <td class="br-item" role="listitem">@item.Esf.Enderecos.Rua, @item.Esf.Enderecos.Numero</td>
+                    <td class="br-item" role="listitem">@item.Esf.Enderecos.Bairro</td>
+                    <td class="br-item" role="listitem">@item.EsfId - @item.Esf.Nome</td>
+                    <td class="br-item" role="listitem">
                         @if (item.Status)
                         {
                             <span style="padding:24px;" class="text-success">
@@ -85,42 +83,16 @@
                     </td>
                     <td style="padding-right:40px" class="br-item" role="listitem">
                         <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                            <!-- BOTÃO DE EXCLUIR USUARIO
-                            <a class="btn btn-danger btn-xs delete-button" asp-action="Excluir" asp-controller="Usuario" asp-route-usuarioId="@item.UsuarioId"><i class="fa fa-trash" aria-hidden="false"></i></a>
-                            <br>-->
-                            <a asp-action="Editar" asp-controller="Usuario" asp-route-usuarioId="@item.UsuarioId" class="btn btn-warning" style="width:70px;">
+                            <a asp-action="Editar" asp-controller="Usuario" asp-route-usuarioId="@item.UsuarioId" class="text-primary text-center btn border-primary" style="width:70px;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-person-fill-gear" viewBox="0 0 16 16">
                                     <path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0m-9 8c0 1 1 1 1 1h5.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.544-3.393C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4m9.886-3.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382l.045-.148ZM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0" />
                                 </svg>
                             </a>
-                        </div>          
+                        </div>
                     </td>
                 </tr>
             }
         </tbody>
     </table>
-    <!-- ALERTA DE CONFIRMAR EXCLUSÃO USUARIO
-    <div class="modal fade" id="confirm-delete-modal" tabindex="-1" role="dialog" aria-labelledby="confirm-delete-modal-label" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="confirm-delete-modal-label">Confirmar Exclusão</h5>
-                    <a asp-action="Index" asp-controller="Usuario" class="btn-close" aria-label="Close"></a>
-                </div>
-
-                <div class="modal-body">
-                    Tem certeza de que deseja excluir este usuário?
-                </div>
-                <div class="modal-footer">
-                    <a asp-action="Index" asp-controller="Usuario" class="btn btn-secondary" data-dismiss="modal">Cancelar</a>
-                    <a class="btn btn-danger" id="confirm-delete-button" href="#">Excluir</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    -->
 </div>
-
 <script src="~/js/site.js"></script>
-
-

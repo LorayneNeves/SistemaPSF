@@ -1,7 +1,9 @@
 ﻿@using PSF.Dominio.Entities;
 @model IEnumerable<Indicador>
+@{
+    ViewData["Title"] = "Listagem de Indicadores";
+}
 <div>
-
     @if (TempData["MensagemSucesso"] != null)
     {
         <div class="alert alert-success" role="alert">
@@ -17,10 +19,9 @@
         </div>
     }
     <br>
-    <div class="d-grid gap-2 d-md-block"> 
+    <div class="d-grid gap-2 d-md-block">
         <a class="btn btn-primary" role="button" asp-action="Inserir" asp-controller="Indicador" style="width:150px">
             <b>Adicionar</b>
-            
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-journal-plus" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M8 5.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V10a.5.5 0 0 1-1 0V8.5H6a.5.5 0 0 1 0-1h1.5V6a.5.5 0 0 1 .5-.5" />
                 <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2" />
@@ -34,27 +35,24 @@
             </svg>
         </a>
     </div>
-
-    <br>
-
-    <br >
     <div class="title">
+        <br>
+        <br>
         <h2 class="text-primary"><b>Listagem de Indicadores Cadastrados</b></h2>
     </div>
     <br>
-    <table class="table table-striped table-sm" id="table-usuarios">
+    <br>
+    <table class="table table-sm table-hover" id="table-usuarios">
         <thead class="br-list horizontal" role="list" color="blue">
             <tr class="header">
-               
+
                 <th class="br-item text-primary" role="listitem"><b>Indicadores</b></th>
                 <th class="br-item text-primary" role="listitem"><b>Tipo</b></th>
                 <th class="br-item text-primary" role="listitem"><b>Status</b></th>
-                <th class="br-item text-primary" role="listitem">
-                    <b>Editar</b>
-                    <span class="br-divider"></span>
+                <th class="br-item text-primary" role="listitem"><b>Editar</b>
+                <span class="br-divider"></span>
             </tr>
         </thead>
-
         <tbody class="header">
             @foreach (var item in Model)
             {
@@ -78,20 +76,19 @@
                                 </svg>
                             </span>
                         }
-                    </td>              
+                    </td>
                     <td class="br-item" role="listitem">
                         <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                            <a asp-action="Editar" asp-controller="Indicador" asp-route-indicadorId="@item.IndicadorId" class="btn btn-$blue-200">
+                            <a asp-action="Editar" asp-controller="Indicador" asp-route-indicadorId="@item.IndicadorId" class="text-primary text-center btn border-primary">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" fill="#0d6efd" class="bi bi-pencil-square" viewBox="0 0 16 16">
                                     <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
                                     <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z" />
                                 </svg>
-                            </a>                          
-
+                            </a>
                         </div>
                     </td>
                 </tr>
-            }         
+            }
         </tbody>
     </table>
 </div>

@@ -10,8 +10,6 @@ namespace PSF.WebApp.Models
         public int IndicadorId { get; set; }
         public Indicador Indicador { get; set; }
         public int Valor { get; set; }
-
-        // Outras propriedades e métodos conforme necessário
     }
 
 }

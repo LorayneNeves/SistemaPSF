@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aCXIdgGSf47lpCEqAopGLdrDQnOU3PSVCKwnk0aOsYvgWFpDWbymwm4HctqkR0Yh9mqyGi8iAvPSWI0VZf293Q==",
+  "dgSpecHash": "oLuw9DfEaZd1behUf6WjCjeRwuU3X++rMNRbDu3FKbqc2Eccyqbo669B3VU0W5eZrmsqK/KPosEEpPHZ4cDJJw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\loray\\OneDrive\\Área de Trabalho\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj",
+  "projectFilePath": "C:\\Users\\loray\\OneDrive\\Pictures\\SistemaPSF\\03 - Desenvolvimento\\SistemaPSF\\PSF\\src\\PSF.Dominio\\PSF.Dominio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\loray\\.nuget\\packages\\microsoft.aspnet.mvc\\5.3.0\\microsoft.aspnet.mvc.5.3.0.nupkg.sha512",
     "C:\\Users\\loray\\.nuget\\packages\\microsoft.aspnet.razor\\3.3.0\\microsoft.aspnet.razor.3.3.0.nupkg.sha512",

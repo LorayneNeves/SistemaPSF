@@ -17,13 +17,9 @@
             @RenderBody()
         </main>
     </div>
-
     <footer class="border-top footer text-muted">
         <div class="container-foot">
-             ESF - Araxá-MG 2023 &copy;
-             <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
-                 
-             </a>
+            ESF - &copy @DateTime.Now.Year.ToString()
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

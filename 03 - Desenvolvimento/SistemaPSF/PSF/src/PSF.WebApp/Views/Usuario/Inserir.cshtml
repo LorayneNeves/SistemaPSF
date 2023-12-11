@@ -4,8 +4,6 @@
     ViewData["Title"] = "Cadastrar Funcionário";
 }
 <form asp-action="InserirConfirmar" asp-controller="Usuario" autocomplete="off" method="POST" class="row g-3 needs-validation">
-    <input asp-for="Esf.Nome" type="hidden" />
-    <input asp-for="Esf.Enderecos" type="hidden" />
     <h3 class="card-title text-primary ">
         <br>
         <b>Cadastrar novo funcionário</b>
@@ -81,7 +79,7 @@
                 <option value="@esfId">@esfNome</option>
             }
         </select>
-        <a asp-controller="Esf" asp-action="Index" class="btn btn-outline text-primary" role="button" style="margin-bottom: 25%;">
+        <a target="_blank" asp-controller="Esf" asp-action="Index" class="btn btn-outline text-primary" role="button" style="margin-bottom: 25%;">
             <i>ESF</i>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
                 <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />

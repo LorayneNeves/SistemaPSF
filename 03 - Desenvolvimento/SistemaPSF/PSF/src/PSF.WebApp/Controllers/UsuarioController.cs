@@ -36,6 +36,8 @@ namespace PSF.WebApp.Controllers
         {
             try
             {
+                ModelState.Remove("Esf");
+
                 if (ModelState.IsValid)
                 {
                     db.Usuario.Add(usuario);
